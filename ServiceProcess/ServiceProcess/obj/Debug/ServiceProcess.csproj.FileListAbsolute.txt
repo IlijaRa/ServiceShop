@@ -17,3 +17,5 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Hom
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Homepage-MainRepairer.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ClientRequests-MainRepairer.g.cs
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ClientRequests-MainRepairer.baml
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\FinishedRequests-MainRepairer.g.cs
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\FinishedRequests-MainRepairer.baml
