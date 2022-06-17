@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\App.xaml
-41643462109
+5-1769718250
 
-91478447752
+10-1947758688
 13152784993
-ClientRequests-MainRepairer.xaml;FinishedRequests-MainRepairer.xaml;Homepage-MainRepairer.xaml;MainWindow.xaml;
+ClientRequests-MainRepairer.xaml;FinishedRequests-MainRepairer.xaml;Homepage-MainRepairer.xaml;MainWindow.xaml;RequestsInProgress-MainRepairer.xaml;
 
-True
+False
 
