@@ -23,3 +23,5 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Req
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\RequestsInProgress-MainRepairer.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ChooseRepairer-MainRepairer.g.cs
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ChooseRepairer-MainRepairer.baml
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\DeletionExplanation-MainRepairer.g.cs
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\DeletionExplanation-MainRepairer.baml
