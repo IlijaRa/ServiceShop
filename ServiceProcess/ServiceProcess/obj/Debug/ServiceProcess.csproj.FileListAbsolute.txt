@@ -1,0 +1,15 @@
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\ServiceProcess.exe.config
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\ServiceProcess.exe
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\ServiceProcess.pdb
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ServiceProcess.csproj.AssemblyReference.cache
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainWindow.g.cs
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\App.g.cs
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ServiceProcess_MarkupCompile.cache
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ServiceProcess_MarkupCompile.lref
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainWindow.baml
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ServiceProcess.g.resources
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ServiceProcess.Properties.Resources.resources
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ServiceProcess.csproj.GenerateResource.cache
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ServiceProcess.csproj.CoreCompileInputs.cache
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ServiceProcess.exe
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ServiceProcess.pdb
