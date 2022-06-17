@@ -7,32 +7,36 @@
         mc:Ignorable="d"
         Title="Homepage" Height="710" Width="800">
     <Grid>
-        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
-            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Click="Button_Click" Background="White" BorderBrush="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="137*"/>
+        </Grid.ColumnDefinitions>
+        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2">
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
-            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
             <Button Content="Client requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
             <Button Content="Finished requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
             <Button Content="Requests in progress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
         </Menu>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="358,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
-        <Label Content="Name :" HorizontalAlignment="Left" Margin="241,37,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="358,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
-        <Label Content="Surname :" HorizontalAlignment="Left" Margin="241,73,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="358,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
-        <Label Content="E-mail :" HorizontalAlignment="Left" Margin="241,107,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="358,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
-        <Label Content="Longevuty :" HorizontalAlignment="Left" Margin="241,141,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="358,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
-        <Label Content="Birthday :" HorizontalAlignment="Left" Margin="241,179,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="358,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
-        <Label Content="Role :" HorizontalAlignment="Left" Margin="241,214,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Calendar HorizontalAlignment="Left" Margin="566,61,0,0" VerticalAlignment="Top" Height="174" Width="198"/>
-        <DataGrid HorizontalAlignment="Left" Height="161" Margin="18,291,0,0" VerticalAlignment="Top" Width="745"/>
-        <DataGrid HorizontalAlignment="Left" Height="161" Margin="18,499,0,0" VerticalAlignment="Top" Width="745"/>
-        <Label Content="History of successful work" HorizontalAlignment="Left" Margin="18,246,0,0" VerticalAlignment="Top" FontSize="30"/>
-        <Label Content="History of unsuccessful work" HorizontalAlignment="Left" Margin="18,453,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="114,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Grid.Column="1"/>
+        <Label Content="Name :" HorizontalAlignment="Left" Margin="241,37,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="114,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Grid.Column="1"/>
+        <Label Content="Surname :" HorizontalAlignment="Left" Margin="241,73,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="114,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Grid.Column="1"/>
+        <Label Content="E-mail :" HorizontalAlignment="Left" Margin="241,107,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="114,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Grid.Column="1"/>
+        <Label Content="Longevuty :" HorizontalAlignment="Left" Margin="241,141,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="114,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Grid.Column="1"/>
+        <Label Content="Birthday :" HorizontalAlignment="Left" Margin="241,179,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="114,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Grid.Column="1"/>
+        <Label Content="Role :" HorizontalAlignment="Left" Margin="241,214,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+        <Calendar HorizontalAlignment="Left" Margin="322,61,0,0" VerticalAlignment="Top" Height="174" Width="198" Grid.Column="1"/>
+        <DataGrid HorizontalAlignment="Left" Height="161" Margin="18,291,0,0" VerticalAlignment="Top" Width="745" Grid.ColumnSpan="2"/>
+        <DataGrid HorizontalAlignment="Left" Height="161" Margin="18,499,0,0" VerticalAlignment="Top" Width="745" Grid.ColumnSpan="2"/>
+        <Label Content="History of successful work" HorizontalAlignment="Left" Margin="18,246,0,0" VerticalAlignment="Top" FontSize="30" Grid.ColumnSpan="2"/>
+        <Label Content="History of unsuccessful work" HorizontalAlignment="Left" Margin="18,453,0,0" VerticalAlignment="Top" FontSize="30" Grid.ColumnSpan="2"/>
         <Image HorizontalAlignment="Left" Height="200" Margin="18,45,0,0" VerticalAlignment="Top" Width="200"/>
     </Grid>
 </Window>
