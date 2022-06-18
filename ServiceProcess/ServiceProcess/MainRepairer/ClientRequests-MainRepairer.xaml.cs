@@ -139,5 +139,33 @@ namespace ServiceProcess
                 MessageBox.Show("Select a request!");
             }
         }
+
+        private void Button_SeeAcount(object sender, RoutedEventArgs e)
+        {
+            var selected_request = (Request)dg_requests.SelectedItem;
+            var clients = ClientCRUD.LoadClients();
+
+            foreach (var client in clients)
+            {
+                if (client.EmailAddress.Equals(selected_request.ClientsEmailAddress))
+                {
+                    CurrentClientInfo.Id = client.Id;
+                    CurrentClientInfo.Name = client.Name;
+                    CurrentClientInfo.Surname = client.Surname;
+                    CurrentClientInfo.EmailAddress = client.EmailAddress;
+                    CurrentClientInfo.DeliveryAddress = client.DeliveryAddress;
+                    CurrentClientInfo.DeliveryCity = client.DeliveryCity;
+                    CurrentClientInfo.PostalCode = client.PostalCode;
+                    CurrentClientInfo.Birthday = client.Birthday;
+                    CurrentClientInfo.PhoneNumber = client.PhoneNumber;
+
+                    break;
+                }
+            }
+
+            HomepageForMainRepairer_Client homepage = new HomepageForMainRepairer_Client();
+            homepage.Show();
+            this.Hide();
+        }
     }
 }

@@ -17,11 +17,11 @@ using System.Windows.Shapes;
 namespace ServiceProcess
 {
     /// <summary>
-    /// Interaction logic for MessageToClient_MainRepairer.xaml
+    /// Interaction logic for MessageToClient_Repairer.xaml
     /// </summary>
-    public partial class MessageToClient_MainRepairer : Window
+    public partial class MessageToClient_Repairer : Window
     {
-        public MessageToClient_MainRepairer()
+        public MessageToClient_Repairer()
         {
             InitializeComponent();
             tb_to.Text = CurrentClientInfo.EmailAddress;
@@ -36,9 +36,9 @@ namespace ServiceProcess
                                                    DateTime.Now,
                                                    Enums.MessageStatus.unread);
 
-            if(result == 1)
+            if (result == 1)
             {
-                HomepageForMainRepairer_Client find = new HomepageForMainRepairer_Client();
+                FindClient_Repairer find = new FindClient_Repairer();
                 find.Show();
                 this.Hide();
             }
@@ -46,6 +46,20 @@ namespace ServiceProcess
             {
                 MessageBox.Show("Error while sending a message!");
             }
+        }
+
+        private void Button_FindClient(object sender, RoutedEventArgs e)
+        {
+            FindClient_Repairer find = new FindClient_Repairer();
+            find.Show();
+            this.Hide();
+        }
+
+        private void Button_WriteReport(object sender, RoutedEventArgs e)
+        {
+            WriteReport_Repairer report = new WriteReport_Repairer();
+            report.Show();
+            this.Hide();
         }
     }
 }

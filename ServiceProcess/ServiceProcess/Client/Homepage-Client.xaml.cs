@@ -23,13 +23,6 @@ namespace ServiceProcess
         public Homepage_Client()
         {
             InitializeComponent();
-            tb_name.Text = CurrentClientInfo.Name;
-            tb_surname.Text = CurrentClientInfo.Surname;
-            tb_email.Text = CurrentClientInfo.EmailAddress;
-            tb_delivery_address.Text = CurrentClientInfo.DeliveryAddress;
-            tb_delivery_city.Text = CurrentClientInfo.DeliveryCity;
-            tb_postal_code.Text = CurrentClientInfo.PostalCode.ToString();
-            tb_phone_number.Text = CurrentClientInfo.PhoneNumber;
         }
 
         private void Button_MalfunctionReport(object sender, RoutedEventArgs e)

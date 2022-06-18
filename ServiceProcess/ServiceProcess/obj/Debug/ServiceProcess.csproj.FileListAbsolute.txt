@@ -46,3 +46,7 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\Dap
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\Dapper.xml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Client\Homepage-Client.g.cs
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Client\Homepage-Client.baml
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Client\HomepageForMainRepairer-Client.g.cs
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Client\HomepageForMainRepairer-Client.baml
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Repairer\MessageToClient-Repairer.g.cs
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Repairer\MessageToClient-Repairer.baml

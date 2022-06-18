@@ -97,7 +97,7 @@ namespace ServiceProcess
             {
                 var selected_client = (Client)dg_clients.SelectedItem;
                 CurrentClientInfo.EmailAddress = selected_client.EmailAddress;
-                MessageToClient_MainRepairer message = new MessageToClient_MainRepairer();
+                MessageToClient_Repairer message = new MessageToClient_Repairer();
                 message.Show();
                 this.Hide();
             }

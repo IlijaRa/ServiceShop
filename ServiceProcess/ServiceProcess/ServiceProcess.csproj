@@ -55,8 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Client\HomepageForMainRepairer-Client.xaml.cs">
+      <DependentUpon>HomepageForMainRepairer-Client.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Client\Homepage-Client.xaml.cs">
       <DependentUpon>Homepage-Client.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Repairer\MessageToClient-Repairer.xaml.cs">
+      <DependentUpon>MessageToClient-Repairer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Repairer\BillGenerator-Repairer.xaml.cs">
       <DependentUpon>BillGenerator-Repairer.xaml</DependentUpon>
@@ -88,7 +94,15 @@
     <Compile Include="Repairer\WriteReport-Repairer.xaml.cs">
       <DependentUpon>WriteReport-Repairer.xaml</DependentUpon>
     </Compile>
+    <Page Include="Client\HomepageForMainRepairer-Client.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Client\Homepage-Client.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Repairer\MessageToClient-Repairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
