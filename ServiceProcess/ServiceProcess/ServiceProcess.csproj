@@ -206,5 +206,11 @@
   <ItemGroup>
     <Resource Include="Screenshot_2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ServiceProcessLibrary\ServiceProcessLibrary.csproj">
+      <Project>{0677346f-a053-4317-b9e2-c43ded3ca26b}</Project>
+      <Name>ServiceProcessLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

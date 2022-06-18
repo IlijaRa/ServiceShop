@@ -39,3 +39,6 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Rep
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\WriteReport-Repairer.g.cs
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ReportMalfunction-Client.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\WriteReport-Repairer.baml
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\ServiceProcessLibrary.dll
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\ServiceProcessLibrary.pdb
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ServiceProcess.csproj.CopyComplete

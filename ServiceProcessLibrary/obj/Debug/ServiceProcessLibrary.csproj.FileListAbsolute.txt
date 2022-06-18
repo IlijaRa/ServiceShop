@@ -1,0 +1,6 @@
+D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\bin\Debug\ServiceProcessLibrary.dll
+D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\bin\Debug\ServiceProcessLibrary.pdb
+D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\obj\Debug\ServiceProcessLibrary.csproj.AssemblyReference.cache
+D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\obj\Debug\ServiceProcessLibrary.csproj.CoreCompileInputs.cache
+D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\obj\Debug\ServiceProcessLibrary.dll
+D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\obj\Debug\ServiceProcessLibrary.pdb
