@@ -44,7 +44,10 @@ namespace ServiceProcessLibrary.Model
         {
             name,
             surname,
-            email
+            email,
+            request_type,
+            payment_type,
+            date
         }
 
         public enum MessageStatus

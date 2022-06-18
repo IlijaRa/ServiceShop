@@ -25,9 +25,25 @@ namespace ServiceProcess
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_ClientRequests(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(CurrentRepairerInfo.Name);
+            ClientRequests_MainRepairer requests = new ClientRequests_MainRepairer();
+            requests.Show();
+            this.Hide();
+        }
+
+        private void Button_RequestsInProgress(object sender, RoutedEventArgs e)
+        {
+            RequestsInProgress requests = new RequestsInProgress();
+            requests.Show();
+            this.Hide();
+        }
+
+        private void Button_FinishedRequests(object sender, RoutedEventArgs e)
+        {
+            FinishedRequests_MainRepairer requests = new FinishedRequests_MainRepairer();
+            requests.Show();
+            this.Hide();
         }
     }
 }

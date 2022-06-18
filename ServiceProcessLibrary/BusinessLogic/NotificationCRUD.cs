@@ -59,5 +59,27 @@ namespace ServiceProcessLibrary.BusinessLogic
 
             return SSMSDataAccess.SaveData(sql, data);
         }
+
+        public static List<Request> LoadRequests()
+        {
+            string sql = @"SELECT *
+                           FROM dbo.Request;";
+
+            return SSMSDataAccess.LoadData<Request>(sql);
+        }
+
+        public static int DeleteRequest(int requestId)
+        {
+            Request data = new Request
+            {
+                Id = requestId
+            };
+
+            string sql = @" DELETE 
+                            FROM dbo.Request
+                            WHERE Id = @Id;";
+
+            return SSMSDataAccess.SaveData(sql, data);
+        }
     }
 }

@@ -93,11 +93,18 @@ namespace ServiceProcess
 
         private void Button_SendMessage(object sender, RoutedEventArgs e)
         {
-            var selected_client = (Client)dg_clients.SelectedItem;
-            CurrentClientInfo.EmailAddress = selected_client.EmailAddress;
-            MessageToClient_MainRepairer message = new MessageToClient_MainRepairer();
-            message.Show();
-            this.Hide();
+            if(dg_clients.SelectedItem != null)
+            {
+                var selected_client = (Client)dg_clients.SelectedItem;
+                CurrentClientInfo.EmailAddress = selected_client.EmailAddress;
+                MessageToClient_MainRepairer message = new MessageToClient_MainRepairer();
+                message.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Select a client!");
+            }
         }
     }
 }
