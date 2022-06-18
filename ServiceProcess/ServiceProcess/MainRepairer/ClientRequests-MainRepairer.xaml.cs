@@ -1,4 +1,5 @@
-﻿using ServiceProcessLibrary.BusinessLogic;
+﻿using ServiceProcess.MainRepairer;
+using ServiceProcessLibrary.BusinessLogic;
 using ServiceProcessLibrary.Model;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,7 @@ namespace ServiceProcess
     /// </summary>
     public partial class ClientRequests_MainRepairer : Window
     {
+        public Request _selected_request;
         public ClientRequests_MainRepairer()
         {
             InitializeComponent();
@@ -142,30 +144,91 @@ namespace ServiceProcess
 
         private void Button_SeeAcount(object sender, RoutedEventArgs e)
         {
-            var selected_request = (Request)dg_requests.SelectedItem;
-            var clients = ClientCRUD.LoadClients();
-
-            foreach (var client in clients)
+            if(dg_requests.SelectedItem != null)
             {
-                if (client.EmailAddress.Equals(selected_request.ClientsEmailAddress))
-                {
-                    CurrentClientInfo.Id = client.Id;
-                    CurrentClientInfo.Name = client.Name;
-                    CurrentClientInfo.Surname = client.Surname;
-                    CurrentClientInfo.EmailAddress = client.EmailAddress;
-                    CurrentClientInfo.DeliveryAddress = client.DeliveryAddress;
-                    CurrentClientInfo.DeliveryCity = client.DeliveryCity;
-                    CurrentClientInfo.PostalCode = client.PostalCode;
-                    CurrentClientInfo.Birthday = client.Birthday;
-                    CurrentClientInfo.PhoneNumber = client.PhoneNumber;
+                var selected_request = (Request)dg_requests.SelectedItem;
+                var clients = ClientCRUD.LoadClients();
 
-                    break;
+                foreach (var client in clients)
+                {
+                    if (client.EmailAddress.Equals(selected_request.ClientsEmailAddress))
+                    {
+                        CurrentClientInfo.Id = client.Id;
+                        CurrentClientInfo.Name = client.Name;
+                        CurrentClientInfo.Surname = client.Surname;
+                        CurrentClientInfo.EmailAddress = client.EmailAddress;
+                        CurrentClientInfo.DeliveryAddress = client.DeliveryAddress;
+                        CurrentClientInfo.DeliveryCity = client.DeliveryCity;
+                        CurrentClientInfo.PostalCode = client.PostalCode;
+                        CurrentClientInfo.Birthday = client.Birthday;
+                        CurrentClientInfo.PhoneNumber = client.PhoneNumber;
+
+                        break;
+                    }
+                }
+
+                HomepageForMainRepairer_Client homepage = new HomepageForMainRepairer_Client();
+                homepage.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Select a request!");
+            }
+        }
+
+        private void Button_Importance(object sender, RoutedEventArgs e)
+        {
+            if(dg_requests.SelectedItem != null)
+            {
+                SetImportance_MainRepairer set = new SetImportance_MainRepairer(this);
+                set.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Select a request!");
+            }
+        }
+
+        private void dg_requests_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (dg_requests.SelectedItem != null)
+            {
+                _selected_request = (Request)dg_requests.SelectedItem;
+                var request = NotificationCRUD.LoadRequestById(_selected_request.Id);
+
+                if (Convert.ToInt32(request.Importance) == (int)Enums.RequestImportance.low_importance)
+                {
+                    btn_importance.Background = Brushes.Green;
+                }
+                if (Convert.ToInt32(request.Importance) == (int)Enums.RequestImportance.mid_importance)
+                {
+                    btn_importance.Background = Brushes.GreenYellow;
+                }
+                if (Convert.ToInt32(request.Importance) == (int)Enums.RequestImportance.high_importance)
+                {
+                    btn_importance.Background = Brushes.Orange;
+                }
+                if (Convert.ToInt32(request.Importance) == (int)Enums.RequestImportance.extreme_importance)
+                {
+                    btn_importance.Background = Brushes.Red;
                 }
             }
+        }
 
-            HomepageForMainRepairer_Client homepage = new HomepageForMainRepairer_Client();
-            homepage.Show();
-            this.Hide();
+        private void Button_ForwardTo(object sender, RoutedEventArgs e)
+        {
+            if(dg_requests.SelectedItem != null)
+            {
+                var selected_request = (Request)dg_requests.SelectedItem;
+                ChooseRepairer_MainRepairer choose = new ChooseRepairer_MainRepairer(selected_request);
+                choose.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Select a request!");
+            }
         }
     }
 }

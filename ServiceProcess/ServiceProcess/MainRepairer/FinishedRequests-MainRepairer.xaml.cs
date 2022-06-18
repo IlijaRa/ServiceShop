@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ServiceProcessLibrary.BusinessLogic;
+using ServiceProcessLibrary.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,16 @@ namespace ServiceProcess
         public FinishedRequests_MainRepairer()
         {
             InitializeComponent();
+            var requests = NotificationCRUD.LoadRequests();
+            List<Request> finished_requests = new List<Request>();
+            foreach (var request in requests)
+            {
+                if (request.StateType == Enums.StateType.finished)
+                {
+                    finished_requests.Add(request);
+                }
+            }
+            dg_requests.ItemsSource = finished_requests;
         }
     }
 }

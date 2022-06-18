@@ -47,13 +47,22 @@ namespace ServiceProcessLibrary.Model
             email,
             request_type,
             payment_type,
-            date
+            date,
+            longevity
         }
 
         public enum MessageStatus
         {
             unread,
             seen
+        }
+
+        public enum RequestImportance
+        {
+            low_importance,
+            mid_importance,
+            high_importance,
+            extreme_importance
         }
     }
 }

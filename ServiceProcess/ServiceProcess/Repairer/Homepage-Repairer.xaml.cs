@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ServiceProcessLibrary.BusinessLogic;
+using ServiceProcessLibrary.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,23 @@ namespace ServiceProcess
         public Homepage_Repairer()
         {
             InitializeComponent();
+            tb_name.Text = CurrentRepairerInfo.Name;
+            tb_surname.Text = CurrentRepairerInfo.Surname;
+            tb_email.Text = CurrentRepairerInfo.EmailAddress;
+            tb_longevity.Text = CurrentRepairerInfo.Longevity.ToString();
+            tb_birthday.Text = CurrentRepairerInfo.Birthday.ToString("MM/dd/yyyy");
+            tb_role.Text = "Repairer";
+
+            var requests = NotificationCRUD.LoadRequests();
+            List<Request> working_on_requests = new List<Request>();
+            foreach (var request in requests)
+            {
+                if (request.RepairerId == CurrentRepairerInfo.Id)
+                {
+                    working_on_requests.Add(request);
+                }
+            }
+            dg_working_on.ItemsSource = working_on_requests;
         }
 
         private void Button_FindClient(object sender, RoutedEventArgs e)

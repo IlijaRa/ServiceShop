@@ -1,0 +1,22 @@
+﻿<Window x:Class="ServiceProcess.MainRepairer.SetImportance_MainRepairer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServiceProcess.MainRepairer"
+        mc:Ignorable="d"
+        Title="Set importance" Height="320" Width="350">
+    <Grid>
+        <Label Content="Choose importance:" HorizontalAlignment="Left" Margin="35,0,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <RadioButton x:Name="rb_low_importance" Content="Low importance" HorizontalAlignment="Left" Margin="101,63,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <RadioButton x:Name="rb_mid_importance" Content="Mid importance" HorizontalAlignment="Left" Margin="101,103,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <RadioButton x:Name="rb_high_importance" Content="High importance" HorizontalAlignment="Left" Margin="101,143,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <RadioButton x:Name="rb_extreme_importance" Content="Extreme importance" HorizontalAlignment="Left" Margin="101,183,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="54,60,0,0" VerticalAlignment="Top" Width="34" Height="26" Background="Green"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="54,101,0,0" VerticalAlignment="Top" Width="34" Height="26" Background="GreenYellow"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="54,141,0,0" VerticalAlignment="Top" Width="34" Height="26" Background="Orange"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="54,181,0,0" VerticalAlignment="Top" Width="34" Height="26" Background="Red"/>
+        <Button Content="Confirm" HorizontalAlignment="Left" Margin="110,235,0,0" VerticalAlignment="Top" Width="120" FontSize="20" Click="Button_Confirm"/>
+
+    </Grid>
+</Window>

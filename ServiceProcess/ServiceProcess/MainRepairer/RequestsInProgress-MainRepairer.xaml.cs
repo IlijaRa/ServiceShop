@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ServiceProcessLibrary.BusinessLogic;
+using ServiceProcessLibrary.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,16 @@ namespace ServiceProcess
         public RequestsInProgress()
         {
             InitializeComponent();
+            var requests = NotificationCRUD.LoadRequests();
+            List<Request> in_progress_requests = new List<Request>();
+            foreach (var request in requests)
+            {
+                if (request.StateType == Enums.StateType.in_progress)
+                {
+                    in_progress_requests.Add(request);
+                }
+            }
+            dg_requests.ItemsSource = in_progress_requests;
         }
     }
 }

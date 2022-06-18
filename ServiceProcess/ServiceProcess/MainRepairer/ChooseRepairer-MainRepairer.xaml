@@ -17,15 +17,14 @@
             <Button Content="Requests in progress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
         </Menu>
         <Label Content="Choose a repairer" HorizontalAlignment="Left" Margin="12,38,0,0" VerticalAlignment="Top" FontSize="30"/>
-        <DataGrid HorizontalAlignment="Left" Height="433" Margin="18,156,0,0" VerticalAlignment="Top" Width="757"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="18,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="20"/>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="538,93,0,0" VerticalAlignment="Top" Width="130" Height="30" FontSize="20"/>
-        <ComboBox HorizontalAlignment="Left" Margin="363,93,0,0" VerticalAlignment="Top" Width="161" Height="30" FontSize="20">
+        <DataGrid x:Name="dg_repairers" HorizontalAlignment="Left" Height="433" Margin="18,156,0,0" VerticalAlignment="Top" Width="757" FontSize="20" IsReadOnly="True"/>
+        <TextBox x:Name="tb_for_search" HorizontalAlignment="Left" Height="30" Margin="18,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="20"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="538,93,0,0" VerticalAlignment="Top" Width="130" Height="30" FontSize="20" Click="Button_SearchRequest"/>
+        <ComboBox x:Name="cb_criteria" HorizontalAlignment="Left" Margin="363,93,0,0" VerticalAlignment="Top" Width="161" Height="30" FontSize="20">
             <ComboBoxItem>Name</ComboBoxItem>
             <ComboBoxItem>Surname</ComboBoxItem>
             <ComboBoxItem>Email</ComboBoxItem>
-            <ComboBoxItem>Longevity</ComboBoxItem>
         </ComboBox>
-        <Button Content="Forward to repairer" HorizontalAlignment="Left" Margin="300,616,0,0" VerticalAlignment="Top" Width="200" Height="30" FontSize="20"/>
+        <Button Content="Forward to repairer" HorizontalAlignment="Left" Margin="300,616,0,0" VerticalAlignment="Top" Width="200" Height="30" FontSize="20" Click="Button_ForwardToRepairer"/>
     </Grid>
 </Window>

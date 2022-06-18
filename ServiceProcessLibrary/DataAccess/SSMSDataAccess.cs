@@ -25,11 +25,19 @@ namespace ServiceProcessLibrary.DataAccess
             }
         }
 
-        public static T LoadSingleData<T>(string sql)
+        public static T LoadRequestById<T>(string sql, int clientId)
         {
             using (IDbConnection cnn = new SqlConnection(GettConnectionstring()))
             {
-                return (T)cnn.Query(sql);
+                return cnn.Query<T>(sql, new { Id = clientId }).FirstOrDefault();
+            }
+        }
+
+        public static T LoadClientByEmail<T>(string sql, string clientEmail)
+        {
+            using (IDbConnection cnn = new SqlConnection(GettConnectionstring()))
+            {
+                return cnn.Query<T>(sql, new { Id = clientEmail }).FirstOrDefault();
             }
         }
 

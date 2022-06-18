@@ -17,6 +17,7 @@ namespace ServiceProcessLibrary.Model
         public Enums.StateType StateType { get; set; }
         public string PaymentType { get; set; }
         public DateTime Date { get; set; }
+        public string Importance { get; set; }
         public int BillName { get; set; }
         public int ClientId { get; set; }
         public int ReportId { get; set; }

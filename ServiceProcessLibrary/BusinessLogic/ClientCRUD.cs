@@ -26,5 +26,15 @@ namespace ServiceProcessLibrary.BusinessLogic
 
             return SSMSDataAccess.LoadData<string>(sql);
         }
+
+        public static Client LoadClientByEmail(string clientEmail)
+        {
+            string sql = @"SELECT *
+                           FROM dbo.Client
+                           WHERE EmailAddress = @EmailAddress;";
+
+            return SSMSDataAccess.LoadClientByEmail<Client>(sql, clientEmail);
+        }
+
     }
 }

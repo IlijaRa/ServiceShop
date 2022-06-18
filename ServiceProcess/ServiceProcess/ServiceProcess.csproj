@@ -61,6 +61,9 @@
     <Compile Include="Client\Homepage-Client.xaml.cs">
       <DependentUpon>Homepage-Client.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainRepairer\SetImportance-MainRepairer.xaml.cs">
+      <DependentUpon>SetImportance-MainRepairer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Repairer\MessageToClient-Repairer.xaml.cs">
       <DependentUpon>MessageToClient-Repairer.xaml</DependentUpon>
     </Compile>
@@ -99,6 +102,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Client\Homepage-Client.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainRepairer\SetImportance-MainRepairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
