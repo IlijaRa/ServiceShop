@@ -1,5 +1,6 @@
 ﻿
 
+FD:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\BillGenerator-Repairer.xaml;;
 FD:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\ChooseRepairer-MainRepairer.xaml;;
 FD:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\ClientRequests-MainRepairer.xaml;;
 FD:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\DeletionExplanation-MainRepairer.xaml;;
@@ -10,4 +11,5 @@ FD:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\Homepage-Rep
 FD:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\MainWindow.xaml;;
 FD:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\MessageToClient.xaml;;
 FD:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\RequestsInProgress-MainRepairer.xaml;;
+FD:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\SendNotification-Repairer.xaml;;
 

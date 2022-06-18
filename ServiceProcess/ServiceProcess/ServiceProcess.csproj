@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BillGenerator-Repairer.xaml.cs">
+      <DependentUpon>BillGenerator-Repairer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ChooseRepairer-MainRepairer.xaml.cs">
       <DependentUpon>ChooseRepairer-MainRepairer.xaml</DependentUpon>
     </Compile>
@@ -73,6 +76,13 @@
     <Compile Include="RequestsInProgress-MainRepairer.xaml.cs">
       <DependentUpon>RequestsInProgress-MainRepairer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SendNotification-Repairer.xaml.cs">
+      <DependentUpon>SendNotification-Repairer.xaml</DependentUpon>
+    </Compile>
+    <Page Include="BillGenerator-Repairer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ChooseRepairer-MainRepairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -130,6 +140,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SendNotification-Repairer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -171,6 +185,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Screenshot_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

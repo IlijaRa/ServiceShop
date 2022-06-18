@@ -1,0 +1,33 @@
+﻿<Window x:Class="ServiceProcess.SendNotification_Repairer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServiceProcess"
+        mc:Ignorable="d"
+        Title="SendNotification_Repairer" Height="710" Width="800">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2">
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
+                <Image Source="chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
+            </Button>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Search clients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Send notification" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Write a report" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+        </Menu>
+        <Label Content="Send notification to 'Main repairer'" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <Image Margin="483,42,261,589" Source="Image4.png" Stretch="Fill"/>
+        <Label Content="This message will be sent to the Main repairer" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="267,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize ="20" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="267,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize ="20"/>
+        <Label Content="To :" HorizontalAlignment="Left" Margin="134,146,0,0" VerticalAlignment="Top" FontSize ="20" Width="50"/>
+        <Label Content="Subject :" HorizontalAlignment="Left" Margin="134,192,0,0" VerticalAlignment="Top" FontSize ="20" Width="108"/>
+        <Label Content="Message :" HorizontalAlignment="Left" Margin="134,234,0,0" VerticalAlignment="Top" FontSize ="20" Width="124"/>
+        <TextBox HorizontalAlignment="Left" Height="276" Margin="267,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize ="20" AcceptsReturn="True"/>
+        <Button Content="Send" HorizontalAlignment="Left" Margin="288,611,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20"/>
+        <Button Content="Go back" HorizontalAlignment="Left" Margin="407,611,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20"/>
+        <Label Content="Choose a bill :" HorizontalAlignment="Left" Margin="134,523,0,0" VerticalAlignment="Top" FontSize ="20" Width="133"/>
+        <ComboBox HorizontalAlignment="Left" Margin="267,525,0,0" VerticalAlignment="Top" Width="388" Height="30"/>
+    </Grid>
+</Window>

@@ -1,0 +1,43 @@
+﻿<Window x:Class="ServiceProcess.BillGenerator_Repairer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServiceProcess"
+        mc:Ignorable="d"
+        Title="BillGenerator_Repairer" Height="710" Width="800">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2">
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
+                <Image Source="chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
+            </Button>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Search clients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Send notification" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Write a report" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+        </Menu>
+        <Label Content="Generate a bill" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <Label Content="You need to calculate the price" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="328,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="328,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
+        <Label Content="Enterprise name :" HorizontalAlignment="Left" Margin="134,159,0,0" VerticalAlignment="Top" FontSize ="20" Width="166"/>
+        <Label Content="Enterprise address :" HorizontalAlignment="Left" Margin="134,205,0,0" VerticalAlignment="Top" FontSize ="20" Width="189"/>
+        <Label Content="Clients name :" HorizontalAlignment="Left" Margin="134,247,0,0" VerticalAlignment="Top" FontSize ="20" Width="138"/>
+        <Label Content="Clients surname :" HorizontalAlignment="Left" Margin="134,294,0,0" VerticalAlignment="Top" FontSize ="20" Width="166"/>
+        <TextBox HorizontalAlignment="Left" Height="58" Margin="328,532,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" AcceptsReturn="True" IsEnabled="False"/>
+        <Button Content="Send" HorizontalAlignment="Left" Margin="288,609,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20"/>
+        <Button Content="Go back" HorizontalAlignment="Left" Margin="407,609,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20"/>
+        <Image Margin="206,39,492,591" Source="Screenshot_1.png" Stretch="Fill"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="328,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="328,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="328,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="328,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
+        <Label Content="Clients address :" HorizontalAlignment="Left" Margin="134,339,0,0" VerticalAlignment="Top" FontSize ="20" Width="166"/>
+        <Label Content="Price :" HorizontalAlignment="Left" Margin="134,386,0,0" VerticalAlignment="Top" FontSize ="20" Width="166"/>
+        <Label Content="Spent materials :" HorizontalAlignment="Left" Margin="134,432,0,0" VerticalAlignment="Top" FontSize ="20" Width="166"/>
+        <Label Content="Terms and &#xD;&#xA;Conditions :" HorizontalAlignment="Left" Margin="134,527,0,0" VerticalAlignment="Top" FontSize ="20" Width="118"/>
+        <TextBox HorizontalAlignment="Left" Height="77" Margin="328,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" AcceptsReturn="True" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="328,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20"/>
+        <Label Content="Bill name :" HorizontalAlignment="Left" Margin="134,112,0,0" VerticalAlignment="Top" FontSize ="20" Width="166"/>
+    </Grid>
+</Window>
