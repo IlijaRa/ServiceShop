@@ -25,7 +25,7 @@ namespace ServiceProcess
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonLogIn(object sender, RoutedEventArgs e)
         {
 
         }

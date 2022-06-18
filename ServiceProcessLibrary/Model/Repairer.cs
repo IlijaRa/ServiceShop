@@ -11,10 +11,10 @@ namespace ServiceProcessLibrary.Model
         public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public string Email { get; set; }
+        public string EmailAddress { get; set; }
         public double Longevity { get; set; }
         public DateTime Birthday { get; set; }
-        public Enums.Roles role { get; set; } = Enums.Roles.Repairer;
-        public string SuperiorEmail { get; set; }
+        public Enums.RepairerRoles role { get; set; } = Enums.RepairerRoles.Repairer;
+        public string SuperiorsEmailAddress { get; set; }
     }
 }

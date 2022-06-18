@@ -9,7 +9,7 @@ namespace ServiceProcessLibrary.Model
     public class Bill
     {
         public int Id { get; set; }
-        public string BillName { get; set; }
+        public string Name { get; set; }
         public string EnterpriseName { get; set; }
         public string EnterpriseAddress { get; set; }
         public string ClientsName { get; set; }

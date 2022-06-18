@@ -8,9 +8,8 @@ namespace ServiceProcessLibrary.Model
 {
     public class Enums
     {
-        public enum Roles
+        public enum RepairerRoles
         {
-            Client,
             Repairer,
             MainRepairer
         }
