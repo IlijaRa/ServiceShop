@@ -42,3 +42,5 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Cli
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainRepairer\RequestsInProgress-MainRepairer.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Repairer\SendNotification-Repairer.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Repairer\WriteReport-Repairer.baml
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\Dapper.dll
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\Dapper.xml
