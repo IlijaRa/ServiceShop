@@ -31,7 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\ServiceProcess\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic\ClientCRUD.cs" />
+    <Compile Include="BusinessLogic\RepairerCRUD.cs" />
+    <Compile Include="DataAccess\SSMSDataAccess.cs" />
     <Compile Include="Model\Client.cs" />
     <Compile Include="Model\CurrentClientInfo.cs" />
     <Compile Include="Model\CurrentRepairerInfo.cs" />
@@ -53,9 +60,9 @@
     <Compile Include="Model\Request.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="BusinessLogic\" />
-    <Folder Include="DataAccess\" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

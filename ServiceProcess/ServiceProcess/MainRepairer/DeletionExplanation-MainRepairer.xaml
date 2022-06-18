@@ -9,7 +9,7 @@
     <Grid>
         <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2">
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
-                <Image Source="chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
+                <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
             <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
             <Button Content="Client requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>

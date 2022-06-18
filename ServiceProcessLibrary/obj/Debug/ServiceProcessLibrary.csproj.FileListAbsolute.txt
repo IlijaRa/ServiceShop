@@ -4,3 +4,6 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\obj\Debug\ServiceProc
 D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\obj\Debug\ServiceProcessLibrary.csproj.CoreCompileInputs.cache
 D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\obj\Debug\ServiceProcessLibrary.dll
 D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\obj\Debug\ServiceProcessLibrary.pdb
+D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\bin\Debug\Dapper.dll
+D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\bin\Debug\Dapper.xml
+D:\GitHubRepositories\ServiceProcess\ServiceProcessLibrary\obj\Debug\ServiceProcessLibrary.csproj.CopyComplete

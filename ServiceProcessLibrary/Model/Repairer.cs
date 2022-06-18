@@ -12,6 +12,7 @@ namespace ServiceProcessLibrary.Model
         public string Name { get; set; }
         public string Surname { get; set; }
         public string EmailAddress { get; set; }
+        public string Password { get; set; }
         public double Longevity { get; set; }
         public DateTime Birthday { get; set; }
         public Enums.RepairerRoles role { get; set; } = Enums.RepairerRoles.Repairer;
