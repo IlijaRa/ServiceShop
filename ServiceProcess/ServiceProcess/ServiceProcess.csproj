@@ -55,65 +55,65 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BillGenerator-Repairer.xaml.cs">
+    <Compile Include="Repairer\BillGenerator-Repairer.xaml.cs">
       <DependentUpon>BillGenerator-Repairer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ChooseRepairer-MainRepairer.xaml.cs">
+    <Compile Include="MainRepairer\ChooseRepairer-MainRepairer.xaml.cs">
       <DependentUpon>ChooseRepairer-MainRepairer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DeletionExplanation-MainRepairer.xaml.cs">
+    <Compile Include="MainRepairer\DeletionExplanation-MainRepairer.xaml.cs">
       <DependentUpon>DeletionExplanation-MainRepairer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FindClient-Repairer.xaml.cs">
+    <Compile Include="Repairer\FindClient-Repairer.xaml.cs">
       <DependentUpon>FindClient-Repairer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Homepage-Repairer.xaml.cs">
+    <Compile Include="Repairer\Homepage-Repairer.xaml.cs">
       <DependentUpon>Homepage-Repairer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MessageToClient.xaml.cs">
+    <Compile Include="InCommon\MessageToClient.xaml.cs">
       <DependentUpon>MessageToClient.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ReportMalfunction-Client.xaml.cs">
+    <Compile Include="Client\ReportMalfunction-Client.xaml.cs">
       <DependentUpon>ReportMalfunction-Client.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RequestsInProgress-MainRepairer.xaml.cs">
+    <Compile Include="MainRepairer\RequestsInProgress-MainRepairer.xaml.cs">
       <DependentUpon>RequestsInProgress-MainRepairer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SendNotification-Repairer.xaml.cs">
+    <Compile Include="Repairer\SendNotification-Repairer.xaml.cs">
       <DependentUpon>SendNotification-Repairer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WriteReport-Repairer.xaml.cs">
+    <Compile Include="Repairer\WriteReport-Repairer.xaml.cs">
       <DependentUpon>WriteReport-Repairer.xaml</DependentUpon>
     </Compile>
-    <Page Include="BillGenerator-Repairer.xaml">
+    <Page Include="Repairer\BillGenerator-Repairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ChooseRepairer-MainRepairer.xaml">
+    <Page Include="MainRepairer\ChooseRepairer-MainRepairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ClientRequests-MainRepairer.xaml">
+    <Page Include="MainRepairer\ClientRequests-MainRepairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DeletionExplanation-MainRepairer.xaml">
+    <Page Include="MainRepairer\DeletionExplanation-MainRepairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FindClient-Repairer.xaml">
+    <Page Include="Repairer\FindClient-Repairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FinishedRequests-MainRepairer.xaml">
+    <Page Include="MainRepairer\FinishedRequests-MainRepairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Homepage-MainRepairer.xaml">
+    <Page Include="MainRepairer\Homepage-MainRepairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Homepage-Repairer.xaml">
+    <Page Include="Repairer\Homepage-Repairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -125,36 +125,36 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ClientRequests-MainRepairer.xaml.cs">
+    <Compile Include="MainRepairer\ClientRequests-MainRepairer.xaml.cs">
       <DependentUpon>ClientRequests-MainRepairer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FinishedRequests-MainRepairer.xaml.cs">
+    <Compile Include="MainRepairer\FinishedRequests-MainRepairer.xaml.cs">
       <DependentUpon>FinishedRequests-MainRepairer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Homepage-MainRepairer.xaml.cs">
+    <Compile Include="MainRepairer\Homepage-MainRepairer.xaml.cs">
       <DependentUpon>Homepage-MainRepairer.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MessageToClient.xaml">
+    <Page Include="InCommon\MessageToClient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ReportMalfunction-Client.xaml">
+    <Page Include="Client\ReportMalfunction-Client.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RequestsInProgress-MainRepairer.xaml">
+    <Page Include="MainRepairer\RequestsInProgress-MainRepairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SendNotification-Repairer.xaml">
+    <Page Include="Repairer\SendNotification-Repairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WriteReport-Repairer.xaml">
+    <Page Include="Repairer\WriteReport-Repairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,25 +186,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image1.png" />
+    <Resource Include="images\Image1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image2.png" />
+    <Resource Include="images\Image2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image3.png" />
+    <Resource Include="images\Image3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="chimney-home-icon-transparent-1.png" />
+    <Resource Include="images\chimney-home-icon-transparent-1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image4.png" />
+    <Resource Include="images\Image4.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Screenshot_1.png" />
+    <Resource Include="images\Screenshot_1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Screenshot_2.png" />
+    <Resource Include="images\Screenshot_2.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ServiceProcessLibrary\ServiceProcessLibrary.csproj">
