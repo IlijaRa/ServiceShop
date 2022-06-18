@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceProcessLibrary.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,7 @@ namespace ServiceProcess
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show(CurrentRepairerInfo.Name);
         }
     }
 }

@@ -15,7 +15,7 @@ namespace ServiceProcessLibrary.Model
         public string Password { get; set; }
         public double Longevity { get; set; }
         public DateTime Birthday { get; set; }
-        public Enums.RepairerRoles role { get; set; } = Enums.RepairerRoles.Repairer;
+        public Enums.RepairerRoles role { get; set; }
         public string SuperiorsEmailAddress { get; set; }
     }
 }

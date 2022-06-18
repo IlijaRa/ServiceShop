@@ -12,7 +12,7 @@
         </Grid.RowDefinitions>
         <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
-                <Image Source="chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
+                <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
             <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
             <Button Content="Malfunction report" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
@@ -21,18 +21,22 @@
         <Label Content="This report will be sent to the Main repairer" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" FontSize="15"/>
         <Label Content="Clients name :" HorizontalAlignment="Left" Margin="134,133,0,0" VerticalAlignment="Top" FontSize ="20" Width="138"/>
         <Label Content="Clients surname :" HorizontalAlignment="Left" Margin="134,180,0,0" VerticalAlignment="Top" FontSize ="20" Width="166"/>
-        <Button Content="Send" HorizontalAlignment="Left" Margin="288,570,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20"/>
-        <Button Content="Go back" HorizontalAlignment="Left" Margin="407,570,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="328,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="328,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="328,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="328,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
+        <Button Content="Send" HorizontalAlignment="Left" Margin="288,570,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="Button_Send"/>
+        <Button Content="Go back" HorizontalAlignment="Left" Margin="407,570,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="Button_GoBack"/>
+        <TextBox x:Name="tb_name" HorizontalAlignment="Left" Height="30" Margin="328,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
+        <TextBox x:Name="tb_surname" HorizontalAlignment="Left" Height="30" Margin="328,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
+        <TextBox x:Name="tb_email" HorizontalAlignment="Left" Height="30" Margin="328,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" IsEnabled="False"/>
+        <TextBox x:Name="tb_equipment_name" HorizontalAlignment="Left" Height="30" Margin="328,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20"/>
         <Label Content="Clients e-mail :" HorizontalAlignment="Left" Margin="134,225,0,0" VerticalAlignment="Top" FontSize ="20" Width="166"/>
         <Label Content="Equipment name :" HorizontalAlignment="Left" Margin="134,272,0,0" VerticalAlignment="Top" FontSize ="20" Width="172"/>
         <Label Content="Details of &#xD;&#xA;your problem :" HorizontalAlignment="Left" Margin="134,318,0,0" VerticalAlignment="Top" FontSize ="20" Width="166"/>
         <Label Content="Payment :" HorizontalAlignment="Left" Margin="134,502,0,0" VerticalAlignment="Top" FontSize ="20" Width="118"/>
-        <TextBox HorizontalAlignment="Left" Height="165" Margin="328,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" AcceptsReturn="True" IsEnabled="False"/>
-        <Image Margin="298,43,436,593" Source="Screenshot_2.png" Stretch="Fill"/>
-        <ComboBox HorizontalAlignment="Left" Margin="328,506,0,0" VerticalAlignment="Top" Width="327" Height="30"/>
+        <TextBox x:Name="tb_details" HorizontalAlignment="Left" Height="165" Margin="328,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize ="20" AcceptsReturn="True"/>
+        <Image Margin="298,43,436,593" Source="/images/Screenshot_2.png" Stretch="Fill"/>
+        <ComboBox x:Name="cb_payment" HorizontalAlignment="Left" Margin="328,506,0,0" VerticalAlignment="Top" Width="327" Height="30" FontSize="20">
+            <ComboBoxItem>Cash</ComboBoxItem>
+            <ComboBoxItem>Card</ComboBoxItem>
+            <ComboBoxItem>Check</ComboBoxItem>
+        </ComboBox>
     </Grid>
 </Window>

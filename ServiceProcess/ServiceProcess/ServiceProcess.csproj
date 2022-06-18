@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Client\Homepage-Client.xaml.cs">
+      <DependentUpon>Homepage-Client.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Repairer\BillGenerator-Repairer.xaml.cs">
       <DependentUpon>BillGenerator-Repairer.xaml</DependentUpon>
     </Compile>
@@ -85,6 +88,10 @@
     <Compile Include="Repairer\WriteReport-Repairer.xaml.cs">
       <DependentUpon>WriteReport-Repairer.xaml</DependentUpon>
     </Compile>
+    <Page Include="Client\Homepage-Client.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Repairer\BillGenerator-Repairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

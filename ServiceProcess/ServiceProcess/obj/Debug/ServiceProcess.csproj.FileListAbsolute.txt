@@ -44,3 +44,5 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Rep
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Repairer\WriteReport-Repairer.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\Dapper.dll
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\Dapper.xml
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Client\Homepage-Client.g.cs
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Client\Homepage-Client.baml

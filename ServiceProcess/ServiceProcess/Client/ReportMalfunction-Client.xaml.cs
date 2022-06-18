@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ServiceProcessLibrary.BusinessLogic;
+using ServiceProcessLibrary.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,42 @@ namespace ServiceProcess
         public ReportMalfunction_Client()
         {
             InitializeComponent();
+            tb_name.Text = CurrentClientInfo.Name;
+            tb_surname.Text = CurrentClientInfo.Surname;
+            tb_email.Text = CurrentClientInfo.EmailAddress;
+        }
+
+        private void Button_GoBack(object sender, RoutedEventArgs e)
+        {
+            Homepage_Client homepage = new Homepage_Client();
+            homepage.Show();
+            this.Hide();
+        }
+
+        private void Button_Send(object sender, RoutedEventArgs e)
+        {
+            int result = ReportsCRUD.CreateMalfunctionRequest(CurrentClientInfo.Name, 
+                                                 CurrentClientInfo.Surname, 
+                                                 CurrentClientInfo.EmailAddress, 
+                                                 "Equipment name :" + tb_equipment_name.Text + '\n' + tb_details.Text,
+                                                 Enums.RequestType.repairment,
+                                                 Enums.StateType.not_forwarded,
+                                                 cb_payment.Text,
+                                                 DateTime.Now,
+                                                 CurrentClientInfo.Id);
+            if (result == 1)
+            {
+                tb_name.Clear();
+                tb_surname.Clear();
+                tb_email.Clear();
+                tb_equipment_name.Clear();
+                tb_details.Clear();
+                cb_payment.SelectedItem = null;
+            }
+            else
+            {
+                MessageBox.Show("Error while sending a report!");
+            }
         }
     }
 }

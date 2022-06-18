@@ -15,7 +15,7 @@ namespace ServiceProcessLibrary.Model
         public string Password { get; set; }
         public string DeliveryAddress { get; set; }
         public string DeliveryCity { get; set; }
-        public double PostalCode { get; set; }
+        public string PostalCode { get; set; }
         public DateTime Birthday { get; set; }
         public string PhoneNumber { get; set; }
     }

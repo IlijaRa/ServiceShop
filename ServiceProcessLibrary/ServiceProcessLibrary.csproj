@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="BusinessLogic\ClientCRUD.cs" />
     <Compile Include="BusinessLogic\RepairerCRUD.cs" />
+    <Compile Include="BusinessLogic\ReportsCRUD.cs" />
     <Compile Include="DataAccess\SSMSDataAccess.cs" />
     <Compile Include="Model\Client.cs" />
     <Compile Include="Model\CurrentClientInfo.cs" />

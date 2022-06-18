@@ -17,7 +17,7 @@
             <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
             <Button Content="Client requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
             <Button Content="Finished requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Requests in progress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Requests in progress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
         </Menu>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="358,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
         <Label Content="Name :" HorizontalAlignment="Left" Margin="241,37,0,0" VerticalAlignment="Top" FontSize="20"/>

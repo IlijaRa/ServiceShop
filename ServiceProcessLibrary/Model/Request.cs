@@ -13,10 +13,10 @@ namespace ServiceProcessLibrary.Model
         public string ClientsSurname { get; set; }
         public string ClientsEmailAddress { get; set; }
         public string Description { get; set; }
-        public Enums.RequestType request_type { get; set; }
-        public Enums.StateType state_type { get; set; }
-        public Enums.PaymentType payment_type { get; set; }
-        public DateTime date { get; set; }
+        public Enums.RequestType RequestType { get; set; }
+        public Enums.StateType StateType { get; set; }
+        public string PaymentType { get; set; }
+        public DateTime Date { get; set; }
         public int BillName { get; set; }
         public int ClientId { get; set; }
         public int ReportId { get; set; }

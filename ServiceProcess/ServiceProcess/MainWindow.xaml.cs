@@ -1,4 +1,5 @@
 ﻿using ServiceProcessLibrary.BusinessLogic;
+using ServiceProcessLibrary.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,13 +36,35 @@ namespace ServiceProcess
             {
                 if(client.EmailAddress.Equals(tb_email.Text) & client.Password.Equals(tb_password.Password))
                 {
-                    //TODO: make clients homepage
+                    CurrentClientInfo.Id = client.Id;
+                    CurrentClientInfo.Name = client.Name;
+                    CurrentClientInfo.Surname = client.Surname;
+                    CurrentClientInfo.EmailAddress = client.EmailAddress;
+                    CurrentClientInfo.DeliveryAddress = client.DeliveryAddress;
+                    CurrentClientInfo.DeliveryCity = client.DeliveryCity;
+                    CurrentClientInfo.PostalCode = client.PostalCode;
+                    CurrentClientInfo.Birthday = client.Birthday;
+                    CurrentClientInfo.PhoneNumber = client.PhoneNumber;
+
+                    Homepage_Client homepage = new Homepage_Client();
+                    homepage.Show();
+                    this.Hide();
+                    break;
                 }
             }
             foreach (var repairer in repairers)
             {
                 if (repairer.EmailAddress.Equals(tb_email.Text) & repairer.Password.Equals(tb_password.Password.ToString()) & repairer.role == ServiceProcessLibrary.Model.Enums.RepairerRoles.MainRepairer)
                 {
+                    CurrentRepairerInfo.Id = repairer.Id;
+                    CurrentRepairerInfo.Name = repairer.Name;
+                    CurrentRepairerInfo.Surname = repairer.Surname;
+                    CurrentRepairerInfo.EmailAddress = repairer.EmailAddress;
+                    CurrentRepairerInfo.Longevity = repairer.Longevity;
+                    CurrentRepairerInfo.Birthday = repairer.Birthday;
+                    CurrentRepairerInfo.role = repairer.role;
+                    CurrentRepairerInfo.SuperiorsEmailAddress = repairer.SuperiorsEmailAddress;
+
                     Homepage_MainRepairer homepage = new Homepage_MainRepairer();
                     homepage.Show();
                     this.Hide();
@@ -49,6 +72,15 @@ namespace ServiceProcess
                 }
                 else if (repairer.EmailAddress.Equals(tb_email.Text) & repairer.Password.Equals(tb_password.Password.ToString()) & repairer.role == ServiceProcessLibrary.Model.Enums.RepairerRoles.Repairer)
                 {
+                    CurrentRepairerInfo.Id = repairer.Id;
+                    CurrentRepairerInfo.Name = repairer.Name;
+                    CurrentRepairerInfo.Surname = repairer.Surname;
+                    CurrentRepairerInfo.EmailAddress = repairer.EmailAddress;
+                    CurrentRepairerInfo.Longevity = repairer.Longevity;
+                    CurrentRepairerInfo.Birthday = repairer.Birthday;
+                    CurrentRepairerInfo.role = repairer.role;
+                    CurrentRepairerInfo.SuperiorsEmailAddress = repairer.SuperiorsEmailAddress;
+
                     Homepage_Repairer homepage = new Homepage_Repairer();
                     homepage.Show();
                     this.Hide();
