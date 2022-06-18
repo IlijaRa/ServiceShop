@@ -35,3 +35,7 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Bil
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\BillGenerator-Repairer.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\SendNotification-Repairer.g.cs
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\SendNotification-Repairer.baml
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ReportMalfunction-Client.g.cs
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\WriteReport-Repairer.g.cs
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ReportMalfunction-Client.baml
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\WriteReport-Repairer.baml

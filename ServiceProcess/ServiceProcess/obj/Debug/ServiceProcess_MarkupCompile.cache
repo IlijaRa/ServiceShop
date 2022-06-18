@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\App.xaml
-122102300976
+14929729076
 
-16-724431423
+18-927384586
 13152784993
-BillGenerator-Repairer.xaml;ChooseRepairer-MainRepairer.xaml;ClientRequests-MainRepairer.xaml;DeletionExplanation-MainRepairer.xaml;FindClient-Repairer.xaml;FinishedRequests-MainRepairer.xaml;Homepage-MainRepairer.xaml;Homepage-Repairer.xaml;MainWindow.xaml;MessageToClient.xaml;RequestsInProgress-MainRepairer.xaml;SendNotification-Repairer.xaml;
+BillGenerator-Repairer.xaml;ChooseRepairer-MainRepairer.xaml;ClientRequests-MainRepairer.xaml;DeletionExplanation-MainRepairer.xaml;FindClient-Repairer.xaml;FinishedRequests-MainRepairer.xaml;Homepage-MainRepairer.xaml;Homepage-Repairer.xaml;MainWindow.xaml;MessageToClient.xaml;ReportMalfunction-Client.xaml;RequestsInProgress-MainRepairer.xaml;SendNotification-Repairer.xaml;WriteReport-Repairer.xaml;
 
 False
 

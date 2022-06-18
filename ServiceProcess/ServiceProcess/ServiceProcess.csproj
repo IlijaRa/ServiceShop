@@ -73,6 +73,9 @@
     <Compile Include="MessageToClient.xaml.cs">
       <DependentUpon>MessageToClient.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ReportMalfunction-Client.xaml.cs">
+      <DependentUpon>ReportMalfunction-Client.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RequestsInProgress-MainRepairer.xaml.cs">
       <DependentUpon>RequestsInProgress-MainRepairer.xaml</DependentUpon>
     </Compile>
@@ -136,6 +139,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MessageToClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReportMalfunction-Client.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
