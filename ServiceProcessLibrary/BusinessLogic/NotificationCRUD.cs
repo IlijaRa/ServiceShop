@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ServiceProcessLibrary.BusinessLogic
 {
-    public class ReportsCRUD
+    public class NotificationCRUD
     {
         public static int CreateMalfunctionRequest(string clientsName,
                                                    string clientsSurname,

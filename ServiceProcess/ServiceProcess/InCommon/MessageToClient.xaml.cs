@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ServiceProcessLibrary.BusinessLogic;
+using ServiceProcessLibrary.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,28 @@ namespace ServiceProcess
         public MessageToClient_MainRepairer()
         {
             InitializeComponent();
+            tb_to.Text = CurrentClientInfo.EmailAddress;
+        }
+
+        private void Button_SendMessage(object sender, RoutedEventArgs e)
+        {
+            int result = MessageCRUD.CreateMessage(tb_to.Text,
+                                                   tb_subject.Text,
+                                                   tb_message.Text,
+                                                   CurrentRepairerInfo.EmailAddress,
+                                                   DateTime.Now,
+                                                   Enums.MessageStatus.unread);
+
+            if(result == 1)
+            {
+                FindClient_Repairer find = new FindClient_Repairer();
+                find.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Error while sending a message!");
+            }
         }
     }
 }

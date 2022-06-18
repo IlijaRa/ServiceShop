@@ -23,5 +23,12 @@ namespace ServiceProcess
         {
             InitializeComponent();
         }
+
+        private void Button_FindClient(object sender, RoutedEventArgs e)
+        {
+            FindClient_Repairer find = new FindClient_Repairer();
+            find.Show();
+            this.Hide();
+        }
     }
 }

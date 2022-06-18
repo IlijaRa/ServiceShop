@@ -46,14 +46,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLogic\ClientCRUD.cs" />
+    <Compile Include="BusinessLogic\MessageCRUD.cs" />
     <Compile Include="BusinessLogic\RepairerCRUD.cs" />
-    <Compile Include="BusinessLogic\ReportsCRUD.cs" />
+    <Compile Include="BusinessLogic\NotificationCRUD.cs" />
     <Compile Include="DataAccess\SSMSDataAccess.cs" />
     <Compile Include="Model\Client.cs" />
     <Compile Include="Model\CurrentClientInfo.cs" />
     <Compile Include="Model\CurrentRepairerInfo.cs" />
     <Compile Include="Model\Enums.cs" />
     <Compile Include="Model\JobHistory.cs" />
+    <Compile Include="Model\Message.cs" />
     <Compile Include="Model\Notification.cs" />
     <Compile Include="Model\Repairer.cs" />
     <Compile Include="Model\Bill.cs" />

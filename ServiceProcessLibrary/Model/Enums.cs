@@ -39,5 +39,18 @@ namespace ServiceProcessLibrary.Model
             unsuccessful,
             successful
         }
+
+        public enum SearchCriteria
+        {
+            name,
+            surname,
+            email
+        }
+
+        public enum MessageStatus
+        {
+            unread,
+            seen
+        }
     }
 }
