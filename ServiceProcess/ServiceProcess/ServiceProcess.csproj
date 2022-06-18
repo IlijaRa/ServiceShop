@@ -61,6 +61,9 @@
     <Compile Include="DeletionExplanation-MainRepairer.xaml.cs">
       <DependentUpon>DeletionExplanation-MainRepairer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Homepage-Repairer.xaml.cs">
+      <DependentUpon>Homepage-Repairer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MessageToClient-MainRepairer.xaml.cs">
       <DependentUpon>MessageToClient-MainRepairer.xaml</DependentUpon>
     </Compile>
@@ -84,6 +87,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Homepage-MainRepairer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Homepage-Repairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
