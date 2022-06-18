@@ -38,5 +38,26 @@ namespace ServiceProcessLibrary.BusinessLogic
 
             return SSMSDataAccess.SaveData(sql, data);
         }
+
+        public static int CreateReport(string clientsEmail,
+                                         string title,
+                                         string details,
+                                         int mark,
+                                         int repairerId)
+        {
+            Report data = new Report
+            {
+                ClientsEmailAddress = clientsEmail,
+                Title = title,
+                Details = details,
+                Mark = mark,
+                RepairerId = repairerId,
+            };
+
+            string sql = @"INSERT INTO dbo.Report (ClientsEmailAddress, Title, Details, Mark, RepairerId)
+                           VALUES (@ClientsEmailAddress, @Title, @Details, @Mark, @RepairerId);";
+
+            return SSMSDataAccess.SaveData(sql, data);
+        }
     }
 }

@@ -30,5 +30,12 @@ namespace ServiceProcess
             find.Show();
             this.Hide();
         }
+
+        private void Button_WriteReport(object sender, RoutedEventArgs e)
+        {
+            WriteReport_Repairer report = new WriteReport_Repairer();
+            report.Show();
+            this.Hide();
+        }
     }
 }

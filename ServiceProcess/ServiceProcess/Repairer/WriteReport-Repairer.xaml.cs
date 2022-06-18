@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ServiceProcessLibrary.BusinessLogic;
+using ServiceProcessLibrary.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,29 @@ namespace ServiceProcess
         public WriteReport_Repairer()
         {
             InitializeComponent();
+            tb_to.Text = CurrentRepairerInfo.SuperiorsEmailAddress;
+            cb_involved_client.ItemsSource = null;
+            cb_involved_client.ItemsSource = ClientCRUD.LoadClientsEmails();
+        }
+
+        private void Button_SendReport(object sender, RoutedEventArgs e)
+        {
+            int result = NotificationCRUD.CreateReport(cb_involved_client.Text,
+                                                       tb_subject.Text,
+                                                       tb_details.Text,
+                                                       Convert.ToInt32(cb_mark.Text),
+                                                       CurrentRepairerInfo.Id
+                                                       );
+            if(result == 1)
+            {
+                Homepage_Repairer homepage = new Homepage_Repairer();
+                homepage.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Error occured while sending your report");
+            }
         }
     }
 }
