@@ -2,7 +2,7 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:ServiceProcess"
-             StartupUri="DeletionExplanation-MainRepairer.xaml">
+             StartupUri="MessageToClient-MainRepairer.xaml">
     <Application.Resources>
          
     </Application.Resources>

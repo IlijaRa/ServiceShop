@@ -61,6 +61,9 @@
     <Compile Include="DeletionExplanation-MainRepairer.xaml.cs">
       <DependentUpon>DeletionExplanation-MainRepairer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MessageToClient-MainRepairer.xaml.cs">
+      <DependentUpon>MessageToClient-MainRepairer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RequestsInProgress-MainRepairer.xaml.cs">
       <DependentUpon>RequestsInProgress-MainRepairer.xaml</DependentUpon>
     </Compile>
@@ -105,6 +108,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MessageToClient-MainRepairer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RequestsInProgress-MainRepairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
