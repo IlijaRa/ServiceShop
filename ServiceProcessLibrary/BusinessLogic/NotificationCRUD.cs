@@ -31,7 +31,7 @@ namespace ServiceProcessLibrary.BusinessLogic
                 Date = date,
             };
 
-            string sql = @"INSERT INTO dbo.Request (ClientsName, ClientsSurname, ClientsEmailAddress, Description, RequestType, StateType, PaymentType, Date,)
+            string sql = @"INSERT INTO dbo.Request (ClientsName, ClientsSurname, ClientsEmailAddress, Description, RequestType, StateType, PaymentType, Date)
                            VALUES (@ClientsName, @ClientsSurname, @ClientsEmailAddress, @Description, @RequestType, @StateType, @PaymentType, @Date);";
 
             return SSMSDataAccess.SaveData(sql, data);

@@ -55,7 +55,7 @@ namespace ServiceProcess
             int result = NotificationCRUD.CreateMalfunctionRequest(CurrentClientInfo.Name, 
                                                  CurrentClientInfo.Surname, 
                                                  CurrentClientInfo.EmailAddress, 
-                                                 "Equipment name :" + tb_equipment_name.Text + '\n' + tb_details.Text,
+                                                 "Equipment name :" + tb_equipment_name.Text + ',' + tb_details.Text,
                                                  Enums.RequestType.repairment,
                                                  Enums.StateType.not_forwarded,
                                                  cb_payment.Text,

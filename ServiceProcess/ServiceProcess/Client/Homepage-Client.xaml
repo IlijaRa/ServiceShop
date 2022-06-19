@@ -12,7 +12,7 @@
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
-            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Profile"/>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Profile" Background="#FFEA4949"/>
             <Button Content="Malfunction report" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_MalfunctionReport"/>
         </Menu>
         <TextBox x:Name="tb_name" HorizontalAlignment="Left" Height="30" Margin="487,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
@@ -29,6 +29,6 @@
         <Label Content="Postal code :" HorizontalAlignment="Left" Margin="313,241,0,0" VerticalAlignment="Top" FontSize="20"/>
         <TextBox x:Name="tb_phone_number" HorizontalAlignment="Left" Height="30" Margin="487,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
         <Label Content="Phone number :" HorizontalAlignment="Left" Margin="313,275,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Button Content="Update" HorizontalAlignment="Left" Margin="313,322,0,0" VerticalAlignment="Top" Width="355" Height="30" FontSize="20"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="313,322,0,0" VerticalAlignment="Top" Width="355" Height="30" FontSize="20" Background="#FFEA4949"/>
     </Grid>
 </Window>
