@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="SendNotification_Repairer" Height="710" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
@@ -14,18 +17,18 @@
             <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Profile"/>
             <Button Content="Search clients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_FindClient"/>
         </Menu>
-        <Label Content="Send notification to 'Main repairer'" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="30"/>
-        <Image Margin="483,42,261,589" Source="/images/Image4.png" Stretch="Fill"/>
-        <Label Content="This message will be sent to the Main repairer" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" FontSize="15"/>
-        <TextBox x:Name="tb_to" HorizontalAlignment="Left" Height="30" Margin="267,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize ="20" IsEnabled="False"/>
-        <TextBox x:Name="tb_subject" HorizontalAlignment="Left" Height="30" Margin="267,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize ="20"/>
-        <Label Content="To :" HorizontalAlignment="Left" Margin="134,146,0,0" VerticalAlignment="Top" FontSize ="20" Width="50"/>
-        <Label Content="Subject :" HorizontalAlignment="Left" Margin="134,192,0,0" VerticalAlignment="Top" FontSize ="20" Width="108"/>
-        <Label Content="Message :" HorizontalAlignment="Left" Margin="134,234,0,0" VerticalAlignment="Top" FontSize ="20" Width="124"/>
-        <TextBox x:Name="tb_message" HorizontalAlignment="Left" Height="276" Margin="267,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize ="20" AcceptsReturn="True"/>
-        <Button Content="Send" HorizontalAlignment="Left" Margin="288,611,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="Button_Send"/>
-        <Button Content="Go back" HorizontalAlignment="Left" Margin="407,611,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="Button_GoBack"/>
-        <Label Content="Choose a bill :" HorizontalAlignment="Left" Margin="134,523,0,0" VerticalAlignment="Top" FontSize ="20" Width="133"/>
-        <ComboBox x:Name="cb_choose_bill" HorizontalAlignment="Left" Margin="267,525,0,0" VerticalAlignment="Top" Width="388" Height="30" FontSize="20"/>
+        <Label Content="Send notification to 'Main repairer'" HorizontalAlignment="Left" Margin="138,57,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <Image Margin="611,61,133,570" Source="/images/Image4_colored2.png" Stretch="Fill"/>
+        <Label Content="This message will be sent to the Main repairer" HorizontalAlignment="Left" Margin="222,98,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox x:Name="tb_to" HorizontalAlignment="Left" Height="30" Margin="248,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize ="20" IsEnabled="False" Background="#FFC7E2F7"/>
+        <TextBox x:Name="tb_subject" HorizontalAlignment="Left" Height="30" Margin="248,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize ="20"/>
+        <Label Content="To :" HorizontalAlignment="Left" Margin="154,146,0,0" VerticalAlignment="Top" FontSize ="20" Width="50"/>
+        <Label Content="Subject :" HorizontalAlignment="Left" Margin="154,192,0,0" VerticalAlignment="Top" FontSize ="20" Width="108"/>
+        <Label Content="Message :" HorizontalAlignment="Left" Margin="154,234,0,0" VerticalAlignment="Top" FontSize ="20" Width="124"/>
+        <TextBox x:Name="tb_message" HorizontalAlignment="Left" Height="276" Margin="248,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize ="20" AcceptsReturn="True"/>
+        <Button Content="Send" HorizontalAlignment="Left" Margin="290,594,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="Button_Send" Background="#FF66B5F2"/>
+        <Button Content="Go back" HorizontalAlignment="Left" Margin="412,594,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="Button_GoBack" Background="#FF66B5F2"/>
+        <Label Content="Bill :" HorizontalAlignment="Left" Margin="154,522,0,0" VerticalAlignment="Top" FontSize ="20" Width="50"/>
+        <ComboBox x:Name="cb_choose_bill" HorizontalAlignment="Left" Margin="248,525,0,0" VerticalAlignment="Top" Width="388" Height="30" FontSize="20"/>
     </Grid>
 </Window>

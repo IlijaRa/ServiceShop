@@ -35,12 +35,23 @@ namespace ServiceProcess
             List<Request> working_on_requests = new List<Request>();
             foreach (var request in requests)
             {
-                if (request.RepairerId == CurrentRepairerInfo.Id)
+                if (request.RepairerId == CurrentRepairerInfo.Id & request.StateType == Enums.StateType.in_progress)
                 {
                     working_on_requests.Add(request);
                 }
             }
             dg_working_on.ItemsSource = working_on_requests;
+
+            var history_requests = HistoryCRUD.LoadHistoryJobs();
+            List<Request> hisotry_req = new List<Request>();
+            foreach (var hr in history_requests)
+            {
+                if (hr.RepairersEmailAddress == CurrentRepairerInfo.EmailAddress)
+                {
+                    history_requests.Add(hr);
+                }
+            }
+            dg_history_work.ItemsSource = history_requests;
         }
 
         private void Button_Profile(object sender, RoutedEventArgs e)

@@ -16,17 +16,17 @@
         </Menu>
         <Label Content="Search for materials" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="30"/>
         <TextBox x:Name="tb_for_search" HorizontalAlignment="Left" Height="30" Margin="18,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="20"/>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="538,93,0,0" VerticalAlignment="Top" Width="130" Height="30" FontSize="20" Click="Button_SearchMaterials"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="538,93,0,0" VerticalAlignment="Top" Width="130" Height="30" FontSize="20" Click="Button_SearchMaterials" Background="#FF66B5F2"/>
         <ComboBox x:Name="cb_criteria" HorizontalAlignment="Left" Margin="363,93,0,0" VerticalAlignment="Top" Width="161" Height="30" FontSize="20">
             <ComboBoxItem>Name</ComboBoxItem>
         </ComboBox>
-        <ListBox x:Name="lb_picked_materials" HorizontalAlignment="Left" Height="270" Margin="513,190,0,0" VerticalAlignment="Top" Width="255" FontSize="20"/>
-        <DataGrid x:Name="dg_materials" HorizontalAlignment="Left" Height="416" Margin="18,169,0,0" VerticalAlignment="Top" Width="473" IsReadOnly="True" FontSize="20"/>
+        <ListBox x:Name="lb_picked_materials" HorizontalAlignment="Left" Height="270" Margin="513,190,0,0" VerticalAlignment="Top" Width="255" FontSize="20" Background="#FFC7E2F7"/>
+        <DataGrid x:Name="dg_materials" HorizontalAlignment="Left" Height="416" Margin="18,169,0,0" VerticalAlignment="Top" Width="473" IsReadOnly="True" FontSize="20" Background="#FFC7E2F7"/>
         <Label Content="Price :" HorizontalAlignment="Left" Margin="511,484,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="tb_price" HorizontalAlignment="Left" Height="30" Margin="579,491,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" FontSize="20"/>
-        <Button Content="Done" HorizontalAlignment="Left" Margin="513,545,0,0" VerticalAlignment="Top" Width="255" Height="40" FontSize="20" Click="Button_Done"/>
-        <Button Content="Clear" HorizontalAlignment="Left" Margin="513,608,0,0" VerticalAlignment="Top" Width="255" Height="40" FontSize="20" Click="Button_Clear"/>
-        <Button Content="Pick" HorizontalAlignment="Left" Margin="18,608,0,0" VerticalAlignment="Top" Width="473" Height="40" FontSize="20" Click="ButtonPick"/>
+        <TextBox x:Name="tb_price" HorizontalAlignment="Left" Height="30" Margin="579,488,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" FontSize="20"/>
+        <Button Content="Done" HorizontalAlignment="Left" Margin="513,545,0,0" VerticalAlignment="Top" Width="255" Height="40" FontSize="20" Click="Button_Done" Background="#FF66B5F2"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="513,608,0,0" VerticalAlignment="Top" Width="255" Height="40" FontSize="20" Click="Button_Clear" Background="#FF66B5F2"/>
+        <Button Content="Pick" HorizontalAlignment="Left" Margin="18,608,0,0" VerticalAlignment="Top" Width="473" Height="40" FontSize="20" Click="ButtonPick" Background="#FF66B5F2"/>
         <Label Content="Selected materials :" HorizontalAlignment="Left" Margin="508,154,0,0" VerticalAlignment="Top" FontSize="20"/>
     </Grid>
 </Window>

@@ -262,5 +262,19 @@
   <ItemGroup>
     <Resource Include="images\client.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Image4_colored.png" />
+    <Resource Include="images\Screenshot_1_colored.png" />
+    <Resource Include="images\Screenshot_2_colored.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Screenshot_1_colored2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Image4_colored2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Screenshot_2_colored2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

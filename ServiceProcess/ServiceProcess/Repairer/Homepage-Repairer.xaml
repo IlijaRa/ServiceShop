@@ -15,17 +15,26 @@
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
-            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Profile"/>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Profile" Background="#FF66B5F2"/>
             <Button Content="Search clients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_FindClient"/>
         </Menu>
-        <Calendar HorizontalAlignment="Left" Margin="566,61,0,0" VerticalAlignment="Top" Height="174" Width="198"/>
-        <DataGrid x:Name="dg_working_on" HorizontalAlignment="Left" Height="161" Margin="18,291,0,0" VerticalAlignment="Top" Width="562" IsReadOnly="True"/>
-        <DataGrid HorizontalAlignment="Left" Height="161" Margin="18,499,0,-241" VerticalAlignment="Top" Width="745" IsReadOnly="True"/>
+        <Calendar HorizontalAlignment="Left" Margin="566,61,0,0" VerticalAlignment="Top" Height="174" Width="198">
+            <Calendar.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE4EAF0" Offset="0"/>
+                    <GradientStop Color="#FFECF0F4" Offset="0.16"/>
+                    <GradientStop Color="#FFFCFCFD" Offset="0.16"/>
+                    <GradientStop Color="#FF66B5F2" Offset="1"/>
+                </LinearGradientBrush>
+            </Calendar.Background>
+        </Calendar>
+        <DataGrid x:Name="dg_working_on" HorizontalAlignment="Left" Height="161" Margin="18,291,0,0" VerticalAlignment="Top" Width="562" IsReadOnly="True" Background="#FFC7E2F7" FontSize="14"/>
+        <DataGrid x:Name="dg_history_work" HorizontalAlignment="Left" Height="161" Margin="18,499,0,-241" VerticalAlignment="Top" Width="745" IsReadOnly="True" Background="#FFC7E2F7" FontSize="14"/>
         <Label Content="Currently working on" HorizontalAlignment="Left" Margin="18,246,0,0" VerticalAlignment="Top" FontSize="30"/>
         <Label Content="History of completed work" HorizontalAlignment="Left" Margin="18,453,0,-34" VerticalAlignment="Top" FontSize="30"/>
-        <Button Content="Generate a bill" HorizontalAlignment="Left" Margin="601,313,0,0" VerticalAlignment="Top" Width="162" Height="30" FontSize="20" Click="Button_GenerateBill"/>
-        <Button Content="Send notification" HorizontalAlignment="Left" Margin="601,353,0,0" VerticalAlignment="Top" Width="162" Height="30" FontSize="20" Click="Button_SendNotification"/>
-        <Button Content="Write a report" HorizontalAlignment="Left" Margin="601,394,0,0" VerticalAlignment="Top" Width="162" Height="30" FontSize="20" Click="Button_WriteReport"/>
+        <Button Content="Generate a bill" HorizontalAlignment="Left" Margin="601,313,0,0" VerticalAlignment="Top" Width="162" Height="30" FontSize="20" Click="Button_GenerateBill" Background="#FF66B5F2"/>
+        <Button Content="Send notification" HorizontalAlignment="Left" Margin="601,353,0,0" VerticalAlignment="Top" Width="162" Height="30" FontSize="20" Click="Button_SendNotification" Background="#FF66B5F2"/>
+        <Button Content="Write a report" HorizontalAlignment="Left" Margin="601,394,0,0" VerticalAlignment="Top" Width="162" Height="30" FontSize="20" Click="Button_WriteReport" Background="#FF66B5F2"/>
         <TextBox x:Name="tb_name" HorizontalAlignment="Left" Height="30" Margin="358,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
         <Label Content="Name :" HorizontalAlignment="Left" Margin="241,44,0,0" VerticalAlignment="Top" FontSize="20"/>
         <TextBox x:Name="tb_surname" HorizontalAlignment="Left" Height="30" Margin="358,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>

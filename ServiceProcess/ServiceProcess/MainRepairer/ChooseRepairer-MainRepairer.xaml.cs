@@ -141,6 +141,9 @@ namespace ServiceProcess
                 if(result == 1)
                 {
                     MessageBox.Show("Request is forwarded to a repairer");
+                    Homepage_MainRepairer homepage = new Homepage_MainRepairer();
+                    homepage.Show();
+                    this.Hide();
                 }
                 else
                 {
