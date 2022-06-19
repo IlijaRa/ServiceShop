@@ -29,6 +29,20 @@ namespace ServiceProcess
             tb_email.Text = CurrentClientInfo.EmailAddress;
         }
 
+        private void Button_Profile(object sender, RoutedEventArgs e)
+        {
+            Homepage_Client homepage = new Homepage_Client();
+            homepage.Show();
+            this.Hide();
+        }
+
+        private void Button_MalfunctionReport(object sender, RoutedEventArgs e)
+        {
+            ReportMalfunction_Client report = new ReportMalfunction_Client();
+            report.Show();
+            this.Hide();
+        }
+
         private void Button_GoBack(object sender, RoutedEventArgs e)
         {
             Homepage_Client homepage = new Homepage_Client();

@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="BusinessLogic\BillCRUD.cs" />
     <Compile Include="BusinessLogic\ClientCRUD.cs" />
+    <Compile Include="BusinessLogic\HistoryCRUD.cs" />
     <Compile Include="BusinessLogic\MaterialCRUD.cs" />
     <Compile Include="BusinessLogic\MessageCRUD.cs" />
     <Compile Include="BusinessLogic\RepairerCRUD.cs" />

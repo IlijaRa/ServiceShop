@@ -3,18 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ServiceProcess"
+        xmlns:local="clr-namespace:ServiceProcess" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
         mc:Ignorable="d"
         Title="FindClient_Repairer" Height="710" Width="800">
     <Grid>
-        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2">
+        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
-            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Search clients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Send notification" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Write a report" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Profile"/>
+            <Button Content="Search clients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_FindClient"/>
         </Menu>
         <Label Content="Find a client" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="30"/>
         <DataGrid x:Name="dg_clients" HorizontalAlignment="Left" Height="433" Margin="18,156,0,0" VerticalAlignment="Top" Width="757" GridLinesVisibility="Vertical" FontSize="20" IsReadOnly="True"/>

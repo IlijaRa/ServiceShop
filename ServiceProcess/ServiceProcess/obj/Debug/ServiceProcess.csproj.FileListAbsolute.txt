@@ -54,5 +54,3 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Mai
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainRepairer\SetImportance-MainRepairer.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Repairer\PickSpentMaterials.g.cs
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Repairer\PickSpentMaterials.baml
-D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ReadNotifications-MainRepairer.g.cs
-D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\ReadNotifications-MainRepairer.baml

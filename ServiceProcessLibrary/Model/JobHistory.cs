@@ -12,6 +12,6 @@ namespace ServiceProcessLibrary.Model
         public string ClientsEmailAddress { get; set; }
         public string RepairersEmailAddress { get; set; }
         public string RequestDescription { get; set; }
-        public Enums.JobOutcome outcome { get; set; }
+        public Enums.JobOutcome Outcome { get; set; }
     }
 }

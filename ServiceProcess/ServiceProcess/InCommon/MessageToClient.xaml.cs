@@ -27,6 +27,34 @@ namespace ServiceProcess
             tb_to.Text = CurrentClientInfo.EmailAddress;
         }
 
+        private void Button_ClientRequests(object sender, RoutedEventArgs e)
+        {
+            ClientRequests_MainRepairer requests = new ClientRequests_MainRepairer();
+            requests.Show();
+            this.Hide();
+        }
+
+        private void Button_RequestsInProgress(object sender, RoutedEventArgs e)
+        {
+            RequestsInProgress requests = new RequestsInProgress();
+            requests.Show();
+            this.Hide();
+        }
+
+        private void Button_FinishedRequests(object sender, RoutedEventArgs e)
+        {
+            FinishedRequests_MainRepairer requests = new FinishedRequests_MainRepairer();
+            requests.Show();
+            this.Hide();
+        }
+
+        private void Button_Profile(object sender, RoutedEventArgs e)
+        {
+            Homepage_MainRepairer homepage = new Homepage_MainRepairer();
+            homepage.Show();
+            this.Hide();
+        }
+
         private void Button_SendMessage(object sender, RoutedEventArgs e)
         {
             int result = MessageCRUD.CreateMessage(tb_to.Text,
@@ -46,6 +74,13 @@ namespace ServiceProcess
             {
                 MessageBox.Show("Error while sending a message!");
             }
+        }
+
+        private void Button_GoBack(object sender, RoutedEventArgs e)
+        {
+            Homepage_MainRepairer homepage = new Homepage_MainRepairer();
+            homepage.Show();
+            this.Hide();
         }
     }
 }

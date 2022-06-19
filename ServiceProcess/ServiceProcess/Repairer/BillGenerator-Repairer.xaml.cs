@@ -39,6 +39,20 @@ comprehensive terms of use, terms of sale, or a privacy policy – if you need m
 attending our workshop ‘Legal Boot Camp for your Online Business’ – if you want to get an overview of the law that applies to your online business.";
         }
 
+        private void Button_Profile(object sender, RoutedEventArgs e)
+        {
+            Homepage_Repairer homepage = new Homepage_Repairer();
+            homepage.Show();
+            this.Hide();
+        }
+
+        private void Button_FindClient(object sender, RoutedEventArgs e)
+        {
+            FindClient_Repairer find = new FindClient_Repairer();
+            find.Show();
+            this.Hide();
+        }
+
         private void Button_Calculate(object sender, RoutedEventArgs e)
         {
             PickSpentMaterials materials = new PickSpentMaterials(this);

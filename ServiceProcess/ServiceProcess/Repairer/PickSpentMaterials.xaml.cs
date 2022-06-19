@@ -30,6 +30,20 @@ namespace ServiceProcess
             tb_price.Text = "0";
         }
 
+        private void Button_Profile(object sender, RoutedEventArgs e)
+        {
+            Homepage_Repairer homepage = new Homepage_Repairer();
+            homepage.Show();
+            this.Hide();
+        }
+
+        private void Button_FindClient(object sender, RoutedEventArgs e)
+        {
+            FindClient_Repairer find = new FindClient_Repairer();
+            find.Show();
+            this.Hide();
+        }
+
         private void Button_SearchMaterials(object sender, RoutedEventArgs e)
         {
             List<Material> search_result_materials = new List<Material>();

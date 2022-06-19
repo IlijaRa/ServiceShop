@@ -3,19 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ServiceProcess"
+        xmlns:local="clr-namespace:ServiceProcess" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
         mc:Ignorable="d"
         Title="ReportMalfunction_Client" Height="710" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
+        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="1">
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
-            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Malfunction report" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Profile"/>
+            <Button Content="Malfunction report" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_MalfunctionReport"/>
         </Menu>
         <Label Content="Report a malfunction" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="30"/>
         <Label Content="This report will be sent to the Main repairer" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" FontSize="15"/>

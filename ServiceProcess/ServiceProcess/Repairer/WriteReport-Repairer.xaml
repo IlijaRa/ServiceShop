@@ -3,18 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ServiceProcess"
+        xmlns:local="clr-namespace:ServiceProcess" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
         mc:Ignorable="d"
         Title="WriteReport_Repairer" Height="710" Width="800">
     <Grid>
-        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2">
+        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
-            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Search clients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Send notification" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Write a report" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Profile"/>
+            <Button Content="Search clients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_FindClient"/>
         </Menu>
         <Label Content="Write a report" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="30"/>
         <Label Content="This report will be sent to the Main repairer" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" FontSize="15"/>
@@ -25,7 +23,7 @@
         <Label Content="Details :" HorizontalAlignment="Left" Margin="134,234,0,0" VerticalAlignment="Top" FontSize ="20" Width="124"/>
         <TextBox x:Name="tb_details" HorizontalAlignment="Left" Height="237" Margin="267,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize ="20" AcceptsReturn="True"/>
         <Button Content="Send" HorizontalAlignment="Left" Margin="288,611,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="Button_SendReport"/>
-        <Button Content="Go back" HorizontalAlignment="Left" Margin="407,611,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20"/>
+        <Button Content="Go back" HorizontalAlignment="Left" Margin="407,611,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="Button_GoBack"/>
         <Label Content="Rate :" HorizontalAlignment="Left" Margin="134,546,0,0" VerticalAlignment="Top" FontSize ="20" Width="133"/>
         <ComboBox x:Name="cb_mark" HorizontalAlignment="Left" Margin="267,548,0,0" VerticalAlignment="Top" Width="388" Height="30" FontSize="20">
             <ComboBoxItem>1</ComboBoxItem>

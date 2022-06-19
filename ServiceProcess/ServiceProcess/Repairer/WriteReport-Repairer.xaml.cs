@@ -31,6 +31,20 @@ namespace ServiceProcess
             cb_involved_client.ItemsSource = ClientCRUD.LoadClientsEmails();
         }
 
+        private void Button_Profile(object sender, RoutedEventArgs e)
+        {
+            Homepage_Repairer homepage = new Homepage_Repairer();
+            homepage.Show();
+            this.Hide();
+        }
+
+        private void Button_FindClient(object sender, RoutedEventArgs e)
+        {
+            FindClient_Repairer find = new FindClient_Repairer();
+            find.Show();
+            this.Hide();
+        }
+
         private void Button_SendReport(object sender, RoutedEventArgs e)
         {
             int result = NotificationCRUD.CreateReport(cb_involved_client.Text,
@@ -63,6 +77,13 @@ namespace ServiceProcess
             {
                 MessageBox.Show("Error occured while sending your report");
             }
+        }
+
+        private void Button_GoBack(object sender, RoutedEventArgs e)
+        {
+            Homepage_Repairer homepage = new Homepage_Repairer();
+            homepage.Show();
+            this.Hide();
         }
     }
 }

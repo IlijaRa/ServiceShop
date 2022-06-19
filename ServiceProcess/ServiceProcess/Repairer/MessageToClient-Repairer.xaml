@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ServiceProcess"
+        xmlns:local="clr-namespace:ServiceProcess" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
         mc:Ignorable="d"
         Title="MessageToClient_Repairer" Height="710" Width="800">
     <Grid>
@@ -11,10 +11,8 @@
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
-            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Profile"/>
             <Button Content="Search clients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_FindClient"/>
-            <Button Content="Send notification" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Write a report" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_WriteReport"/>
         </Menu>
         <Label Content="Message to a client" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="30"/>
         <Image Margin="280,42,464,589" Source="/images/Image4.png" Stretch="Fill"/>

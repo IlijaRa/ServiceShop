@@ -64,11 +64,25 @@ namespace ServiceProcess
             this.Hide();
         }
 
-            private void Button_ForwardToADmin(object sender, RoutedEventArgs e)
+            private void Button_ForwardToAdmin(object sender, RoutedEventArgs e)
         {
             if(dg_requests.SelectedItem != null)
             {
                 var selected_request = (Request)dg_requests.SelectedItem;
+                int result = HistoryCRUD.MoveJobToHistory(selected_request.ClientsEmailAddress, 
+                                             CurrentRepairerInfo.EmailAddress, 
+                                             selected_request.Description, 
+                                             Enums.JobOutcome.successful);
+
+                if(result == 1)
+                {
+                    MessageBox.Show("Sent to admin!");
+                    NotificationCRUD.DeleteRequest(selected_request.Id);
+                }
+                else
+                {
+                    MessageBox.Show("Error occured while sending a message to an admin!");
+                }
             }
             else
             {

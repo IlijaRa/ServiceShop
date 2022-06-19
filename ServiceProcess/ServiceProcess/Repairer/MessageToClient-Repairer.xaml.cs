@@ -27,6 +27,20 @@ namespace ServiceProcess
             tb_to.Text = CurrentClientInfo.EmailAddress;
         }
 
+        private void Button_Profile(object sender, RoutedEventArgs e)
+        {
+            Homepage_Repairer homepage = new Homepage_Repairer();
+            homepage.Show();
+            this.Hide();
+        }
+
+        private void Button_FindClient(object sender, RoutedEventArgs e)
+        {
+            FindClient_Repairer find = new FindClient_Repairer();
+            find.Show();
+            this.Hide();
+        }
+
         private void Button_SendMessage(object sender, RoutedEventArgs e)
         {
             int result = MessageCRUD.CreateMessage(tb_to.Text,
@@ -46,13 +60,6 @@ namespace ServiceProcess
             {
                 MessageBox.Show("Error while sending a message!");
             }
-        }
-
-        private void Button_FindClient(object sender, RoutedEventArgs e)
-        {
-            FindClient_Repairer find = new FindClient_Repairer();
-            find.Show();
-            this.Hide();
         }
 
         private void Button_WriteReport(object sender, RoutedEventArgs e)

@@ -28,6 +28,20 @@ namespace ServiceProcess
             dg_clients.ItemsSource = clients;
         }
 
+        private void Button_Profile(object sender, RoutedEventArgs e)
+        {
+            Homepage_Repairer homepage = new Homepage_Repairer();
+            homepage.Show();
+            this.Hide();
+        }
+
+        private void Button_FindClient(object sender, RoutedEventArgs e)
+        {
+            FindClient_Repairer find = new FindClient_Repairer();
+            find.Show();
+            this.Hide();
+        }
+
         private void Button_Search(object sender, RoutedEventArgs e)
         {
             List<Client> search_result_clients = new List<Client>();

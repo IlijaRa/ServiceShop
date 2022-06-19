@@ -43,6 +43,13 @@ namespace ServiceProcess
             dg_working_on.ItemsSource = working_on_requests;
         }
 
+        private void Button_Profile(object sender, RoutedEventArgs e)
+        {
+            Homepage_Repairer homepage = new Homepage_Repairer();
+            homepage.Show();
+            this.Hide();
+        }
+
         private void Button_FindClient(object sender, RoutedEventArgs e)
         {
             FindClient_Repairer find = new FindClient_Repairer();
@@ -52,9 +59,17 @@ namespace ServiceProcess
 
         private void Button_WriteReport(object sender, RoutedEventArgs e)
         {
-            //TODO: WriteReport_Repairer report = new WriteReport_Repairer(selected_request);
-            //report.Show();
-            //this.Hide();
+            if (dg_working_on.SelectedItem != null)
+            {
+                var selected_request = (Request)dg_working_on.SelectedItem;
+                WriteReport_Repairer report = new WriteReport_Repairer(selected_request);
+                report.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Select a job that you are currently working on!");
+            }
         }
 
         private void Button_GenerateBill(object sender, RoutedEventArgs e)

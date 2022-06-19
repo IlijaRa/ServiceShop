@@ -3,18 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ServiceProcess"
+        xmlns:local="clr-namespace:ServiceProcess" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
         mc:Ignorable="d"
         Title="Homepage_Client" Height="710" Width="800">
     <Grid>
-        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2">
+        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="1">
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
-            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Profile"/>
-            <Button Content="Client requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Finished requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Requests in progress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_Profile"/>
+            <Button Content="Client requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_ClientRequests"/>
+            <Button Content="Requests in progress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_RequestsInProgress"/>
+            <Button Content="Finished requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_FinishedRequests"/>
         </Menu>
         <TextBox x:Name="tb_name" HorizontalAlignment="Left" Height="23" Margin="487,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
         <Label Content="Name :" HorizontalAlignment="Left" Margin="313,61,0,0" VerticalAlignment="Top" FontSize="20"/>
