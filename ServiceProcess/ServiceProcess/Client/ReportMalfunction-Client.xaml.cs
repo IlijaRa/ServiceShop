@@ -45,8 +45,7 @@ namespace ServiceProcess
                                                  Enums.RequestType.repairment,
                                                  Enums.StateType.not_forwarded,
                                                  cb_payment.Text,
-                                                 DateTime.Now,
-                                                 CurrentClientInfo.Id);
+                                                 DateTime.Now);
             if (result == 1)
             {
                 tb_name.Clear();

@@ -57,9 +57,10 @@ namespace ServiceProcess
 
         private void Button_WriteReport(object sender, RoutedEventArgs e)
         {
-            WriteReport_Repairer report = new WriteReport_Repairer();
-            report.Show();
-            this.Hide();
+            //TODO:
+            //WriteReport_Repairer report = new WriteReport_Repairer();
+            //report.Show();
+            //this.Hide();
         }
     }
 }

@@ -35,5 +35,34 @@ namespace ServiceProcess
             }
             dg_requests.ItemsSource = in_progress_requests;
         }
+
+        private void Button_ClientRequests(object sender, RoutedEventArgs e)
+        {
+            ClientRequests_MainRepairer requests = new ClientRequests_MainRepairer();
+            requests.Show();
+            this.Hide();
+        }
+
+        private void Button_RequestsInProgress(object sender, RoutedEventArgs e)
+        {
+            RequestsInProgress requests = new RequestsInProgress();
+            requests.Show();
+            this.Hide();
+        }
+
+        private void Button_FinishedRequests(object sender, RoutedEventArgs e)
+        {
+            FinishedRequests_MainRepairer requests = new FinishedRequests_MainRepairer();
+            requests.Show();
+            this.Hide();
+        }
+
+        private void Button_Profile(object sender, RoutedEventArgs e)
+        {
+            Homepage_MainRepairer homepage = new Homepage_MainRepairer();
+            homepage.Show();
+            this.Hide();
+        }
+
     }
 }

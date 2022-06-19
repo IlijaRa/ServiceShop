@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="RequestsInProgress" Height="710" Width="800">
     <Grid>
-        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2">
+        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="1">
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
-            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Client requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Finished requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Requests in progress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_Profile"/>
+            <Button Content="Client requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_ClientRequests"/>
+            <Button Content="Requests in progress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_RequestsInProgress"/>
+            <Button Content="Finished requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_FinishedRequests"/>
         </Menu>
         <Label Content="Preview of requests in progress" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="30"/>
         <DataGrid x:Name="dg_requests" HorizontalAlignment="Left" Height="501" Margin="18,156,0,0" VerticalAlignment="Top" Width="757"/>

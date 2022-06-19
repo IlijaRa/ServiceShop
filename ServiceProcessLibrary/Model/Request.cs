@@ -18,8 +18,8 @@ namespace ServiceProcessLibrary.Model
         public string PaymentType { get; set; }
         public DateTime Date { get; set; }
         public string Importance { get; set; }
-        public int BillName { get; set; }
-        public int ClientId { get; set; }
+        public string BillName { get; set; }
+        public int NotificationId { get; set; }
         public int ReportId { get; set; }
         public int RepairerId { get; set; }
     }

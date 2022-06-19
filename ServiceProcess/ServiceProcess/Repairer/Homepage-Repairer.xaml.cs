@@ -52,9 +52,9 @@ namespace ServiceProcess
 
         private void Button_WriteReport(object sender, RoutedEventArgs e)
         {
-            WriteReport_Repairer report = new WriteReport_Repairer();
-            report.Show();
-            this.Hide();
+            //TODO: WriteReport_Repairer report = new WriteReport_Repairer(selected_request);
+            //report.Show();
+            //this.Hide();
         }
 
         private void Button_GenerateBill(object sender, RoutedEventArgs e)
@@ -63,6 +63,21 @@ namespace ServiceProcess
             {
                 var selected_request = (Request)dg_working_on.SelectedItem;
                 BillGenerator_Repairer bill = new BillGenerator_Repairer(selected_request);
+                bill.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Select a job that you are currently working on!");
+            }
+        }
+
+        private void Button_SendNotification(object sender, RoutedEventArgs e)
+        {
+            if (dg_working_on.SelectedItem != null)
+            {
+                var selected_request = (Request)dg_working_on.SelectedItem;
+                SendNotification_Repairer bill = new SendNotification_Repairer(selected_request);
                 bill.Show();
                 this.Hide();
             }

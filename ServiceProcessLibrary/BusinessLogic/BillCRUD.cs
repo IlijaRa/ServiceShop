@@ -39,5 +39,21 @@ namespace ServiceProcessLibrary.BusinessLogic
 
             return SSMSDataAccess.SaveData(sql, data);
         }
+        public static List<Bill> LoadBills()
+        {
+            string sql = @"SELECT *
+                           FROM dbo.Bill;";
+
+            return SSMSDataAccess.LoadData<Bill>(sql);
+        }
+
+        public static List<string> LoadBillNames()
+        {
+            string sql = @"SELECT Name
+                           FROM dbo.Bill;";
+
+            return SSMSDataAccess.LoadData<string>(sql);
+        }
+
     }
 }

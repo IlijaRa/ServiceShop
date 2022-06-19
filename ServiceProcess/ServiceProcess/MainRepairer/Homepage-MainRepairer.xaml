@@ -14,10 +14,10 @@
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
             </Button>
-            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Client requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_ClientRequests"/>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_Profile"/>
+            <Button Content="Client requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_ClientRequests"/>
             <Button Content="Requests in progress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_RequestsInProgress"/>
-            <Button Content="Finished requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_FinishedRequests"/>
+            <Button Content="Finished requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_FinishedRequests"/>
         </Menu>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="358,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
         <Label Content="Name :" HorizontalAlignment="Left" Margin="241,37,0,0" VerticalAlignment="Top" FontSize="20"/>

@@ -64,6 +64,9 @@
     <Compile Include="MainRepairer\SetImportance-MainRepairer.xaml.cs">
       <DependentUpon>SetImportance-MainRepairer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ReadNotifications-MainRepairer.xaml.cs">
+      <DependentUpon>ReadNotifications-MainRepairer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Repairer\PickSpentMaterials.xaml.cs">
       <DependentUpon>PickSpentMaterials.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainRepairer\SetImportance-MainRepairer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReadNotifications-MainRepairer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

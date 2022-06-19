@@ -45,5 +45,12 @@ namespace ServiceProcess
             requests.Show();
             this.Hide();
         }
+
+        private void Button_Profile(object sender, RoutedEventArgs e)
+        {
+            Homepage_MainRepairer homepage = new Homepage_MainRepairer();
+            homepage.Show();
+            this.Hide();
+        }
     }
 }

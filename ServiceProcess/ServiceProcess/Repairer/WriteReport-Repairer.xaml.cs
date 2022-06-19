@@ -21,9 +21,11 @@ namespace ServiceProcess
     /// </summary>
     public partial class WriteReport_Repairer : Window
     {
-        public WriteReport_Repairer()
+        public readonly Request _request;
+        public WriteReport_Repairer(Request request)
         {
             InitializeComponent();
+            _request = request;
             tb_to.Text = CurrentRepairerInfo.SuperiorsEmailAddress;
             cb_involved_client.ItemsSource = null;
             cb_involved_client.ItemsSource = ClientCRUD.LoadClientsEmails();
@@ -37,8 +39,22 @@ namespace ServiceProcess
                                                        Convert.ToInt32(cb_mark.Text),
                                                        CurrentRepairerInfo.Id
                                                        );
+
             if(result == 1)
             {
+                var reports = NotificationCRUD.LoadReports();
+                Report vanted_rep = new Report(); ;
+
+                foreach (var report in reports)
+                {
+                    if(report.Title.Equals(tb_subject.Text) & report.Details.Equals(tb_details.Text) & report.Mark == Convert.ToInt32(cb_mark.Text))
+                    {
+                        vanted_rep = report;
+                    }
+                }
+
+                NotificationCRUD.UpdateRequestToFinished(_request.Id, vanted_rep.Id);
+
                 Homepage_Repairer homepage = new Homepage_Repairer();
                 homepage.Show();
                 this.Hide();
