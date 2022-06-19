@@ -18,13 +18,13 @@
         </Menu>
         <Label Content="Preview of requests in progress" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="30"/>
         <DataGrid x:Name="dg_requests" HorizontalAlignment="Left" Height="501" Margin="18,156,0,0" VerticalAlignment="Top" Width="757" FontSize="20" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="18,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="20"/>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="538,93,0,0" VerticalAlignment="Top" Width="130" Height="30" FontSize="20"/>
-        <ComboBox HorizontalAlignment="Left" Margin="363,93,0,0" VerticalAlignment="Top" Width="161" Height="30" FontSize="20">
-            <ComboBoxItem>Repairers email</ComboBoxItem>
+        <TextBox x:Name="tb_for_search" HorizontalAlignment="Left" Height="30" Margin="18,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="20"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="538,93,0,0" VerticalAlignment="Top" Width="130" Height="30" FontSize="20" Click="Button_SearchRequests"/>
+        <ComboBox x:Name="cb_criteria" HorizontalAlignment="Left" Margin="363,93,0,0" VerticalAlignment="Top" Width="161" Height="30" FontSize="20">
+            <ComboBoxItem>Clients name</ComboBoxItem>
+            <ComboBoxItem>Clients surname</ComboBoxItem>
             <ComboBoxItem>Clients email</ComboBoxItem>
             <ComboBoxItem>Payment type</ComboBoxItem>
-            <ComboBoxItem>Date</ComboBoxItem>
         </ComboBox>
     </Grid>
 </Window>

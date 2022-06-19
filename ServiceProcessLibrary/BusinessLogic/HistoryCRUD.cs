@@ -28,5 +28,14 @@ namespace ServiceProcessLibrary.BusinessLogic
 
             return SSMSDataAccess.SaveData(sql, data);
         }
+
+        public static List<JobHistory> LoadHistoryJobs()
+        {
+            string sql = @"SELECT *
+                           FROM dbo.JobHistory;";
+
+            return SSMSDataAccess.LoadData<JobHistory>(sql);
+        }
+
     }
 }

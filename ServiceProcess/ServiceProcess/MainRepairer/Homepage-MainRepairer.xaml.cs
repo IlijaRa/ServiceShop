@@ -1,4 +1,5 @@
-﻿using ServiceProcessLibrary.Model;
+﻿using ServiceProcessLibrary.BusinessLogic;
+using ServiceProcessLibrary.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,13 @@ namespace ServiceProcess
         public Homepage_MainRepairer()
         {
             InitializeComponent();
+            tb_name.Text = CurrentRepairerInfo.Name;
+            tb_surname.Text = CurrentRepairerInfo.Surname;
+            tb_email.Text = CurrentRepairerInfo.EmailAddress;
+            tb_longevity.Text = CurrentRepairerInfo.Longevity.ToString();
+            tb_birthday.Text = CurrentRepairerInfo.Birthday.ToString("MM/dd/yyyy");
+            tb_role.Text = "Main repairer";
+            dg_history.ItemsSource = HistoryCRUD.LoadHistoryJobs();
         }
 
         private void Button_ClientRequests(object sender, RoutedEventArgs e)
@@ -50,6 +58,13 @@ namespace ServiceProcess
         {
             Homepage_MainRepairer homepage = new Homepage_MainRepairer();
             homepage.Show();
+            this.Hide();
+        }
+
+        private void Button_GenerateReport(object sender, RoutedEventArgs e)
+        {
+            ServiceProcessReport.Report report = new ServiceProcessReport.Report();
+            report.Show();
             this.Hide();
         }
     }

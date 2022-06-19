@@ -74,17 +74,17 @@ namespace ServiceProcess
                 search_result_requests = SearchClient(Enums.SearchCriteria.name, tb_for_search.Text, dg_requests);
                 dg_requests.ItemsSource = search_result_requests;
             }
-            else if (cb_criteria.Text.Equals("Clients surname"))
+            if (cb_criteria.Text.Equals("Clients surname"))
             {
                 search_result_requests = SearchClient(Enums.SearchCriteria.surname, tb_for_search.Text, dg_requests);
                 dg_requests.ItemsSource = search_result_requests;
             }
-            else if (cb_criteria.Text.Equals("Clients email"))
+            if (cb_criteria.Text.Equals("Clients email"))
             {
                 search_result_requests = SearchClient(Enums.SearchCriteria.email, tb_for_search.Text, dg_requests);
                 dg_requests.ItemsSource = search_result_requests;
             }
-            else if (cb_criteria.Text.Equals("Payment type"))
+            if (cb_criteria.Text.Equals("Payment type"))
             {
                 search_result_requests = SearchClient(Enums.SearchCriteria.payment_type, tb_for_search.Text, dg_requests);
                 dg_requests.ItemsSource = search_result_requests;

@@ -75,12 +75,12 @@ namespace ServiceProcess
                 search_result_repairers = SearchRepairer(Enums.SearchCriteria.name, tb_for_search.Text, dg_repairers);
                 dg_repairers.ItemsSource = search_result_repairers;
             }
-            else if (cb_criteria.Text.Equals("Surname"))
+            if (cb_criteria.Text.Equals("Surname"))
             {
                 search_result_repairers = SearchRepairer(Enums.SearchCriteria.surname, tb_for_search.Text, dg_repairers);
                 dg_repairers.ItemsSource = search_result_repairers;
             }
-            else if (cb_criteria.Text.Equals("Email"))
+            if (cb_criteria.Text.Equals("Email"))
             {
                 search_result_repairers = SearchRepairer(Enums.SearchCriteria.email, tb_for_search.Text, dg_repairers);
                 dg_repairers.ItemsSource = search_result_repairers;

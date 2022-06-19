@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -246,7 +248,19 @@
       <Project>{0677346f-a053-4317-b9e2-c43ded3ca26b}</Project>
       <Name>ServiceProcessLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\ServiceProcessReport\ServiceProcessReport.csproj">
+      <Project>{98fa4eb7-b2c3-435e-85b5-69fbd1197550}</Project>
+      <Name>ServiceProcessReport</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images\repairer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\repairer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\client.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

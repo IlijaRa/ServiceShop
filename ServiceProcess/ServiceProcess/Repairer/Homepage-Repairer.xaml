@@ -10,6 +10,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Image Source="/images/repairer2.png" Margin="18,50,558,438"/>
         <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
                 <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
@@ -17,26 +18,25 @@
             <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_Profile"/>
             <Button Content="Search clients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="Button_FindClient"/>
         </Menu>
-        <TextBox x:Name="tb_name" HorizontalAlignment="Left" Height="23" Margin="358,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
-        <Label Content="Name :" HorizontalAlignment="Left" Margin="241,37,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="tb_surname" HorizontalAlignment="Left" Height="23" Margin="358,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
-        <Label Content="Surname :" HorizontalAlignment="Left" Margin="241,73,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="tb_email" HorizontalAlignment="Left" Height="23" Margin="358,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
-        <Label Content="E-mail :" HorizontalAlignment="Left" Margin="241,107,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="tb_longevity" HorizontalAlignment="Left" Height="23" Margin="358,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
-        <Label Content="Longevity :" HorizontalAlignment="Left" Margin="241,141,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="tb_birthday" HorizontalAlignment="Left" Height="23" Margin="358,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
-        <Label Content="Birthday :" HorizontalAlignment="Left" Margin="241,179,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="tb_role" HorizontalAlignment="Left" Height="23" Margin="358,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
-        <Label Content="Role :" HorizontalAlignment="Left" Margin="241,214,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Calendar HorizontalAlignment="Left" Margin="566,61,0,0" VerticalAlignment="Top" Height="174" Width="198"/>
         <DataGrid x:Name="dg_working_on" HorizontalAlignment="Left" Height="161" Margin="18,291,0,0" VerticalAlignment="Top" Width="562" IsReadOnly="True"/>
         <DataGrid HorizontalAlignment="Left" Height="161" Margin="18,499,0,-241" VerticalAlignment="Top" Width="745" IsReadOnly="True"/>
         <Label Content="Currently working on" HorizontalAlignment="Left" Margin="18,246,0,0" VerticalAlignment="Top" FontSize="30"/>
         <Label Content="History of completed work" HorizontalAlignment="Left" Margin="18,453,0,-34" VerticalAlignment="Top" FontSize="30"/>
-        <Image HorizontalAlignment="Left" Height="200" Margin="18,45,0,0" VerticalAlignment="Top" Width="200"/>
         <Button Content="Generate a bill" HorizontalAlignment="Left" Margin="601,313,0,0" VerticalAlignment="Top" Width="162" Height="30" FontSize="20" Click="Button_GenerateBill"/>
         <Button Content="Send notification" HorizontalAlignment="Left" Margin="601,353,0,0" VerticalAlignment="Top" Width="162" Height="30" FontSize="20" Click="Button_SendNotification"/>
         <Button Content="Write a report" HorizontalAlignment="Left" Margin="601,394,0,0" VerticalAlignment="Top" Width="162" Height="30" FontSize="20" Click="Button_WriteReport"/>
+        <TextBox x:Name="tb_name" HorizontalAlignment="Left" Height="30" Margin="358,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
+        <Label Content="Name :" HorizontalAlignment="Left" Margin="241,44,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="tb_surname" HorizontalAlignment="Left" Height="30" Margin="358,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
+        <Label Content="Surname :" HorizontalAlignment="Left" Margin="241,80,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="tb_email" HorizontalAlignment="Left" Height="30" Margin="358,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
+        <Label Content="E-mail :" HorizontalAlignment="Left" Margin="241,114,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="tb_longevity" HorizontalAlignment="Left" Height="30" Margin="358,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
+        <Label Content="Longevity :" HorizontalAlignment="Left" Margin="241,148,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="tb_birthday" HorizontalAlignment="Left" Height="30" Margin="358,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
+        <Label Content="Birthday :" HorizontalAlignment="Left" Margin="241,186,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="tb_role" HorizontalAlignment="Left" Height="30" Margin="358,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="20"/>
+        <Label Content="Role :" HorizontalAlignment="Left" Margin="241,221,0,0" VerticalAlignment="Top" FontSize="20"/>
     </Grid>
 </Window>
