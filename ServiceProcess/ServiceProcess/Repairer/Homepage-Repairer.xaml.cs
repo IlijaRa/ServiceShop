@@ -56,5 +56,20 @@ namespace ServiceProcess
             report.Show();
             this.Hide();
         }
+
+        private void Button_GenerateBill(object sender, RoutedEventArgs e)
+        {
+            if(dg_working_on.SelectedItem != null)
+            {
+                var selected_request = (Request)dg_working_on.SelectedItem;
+                BillGenerator_Repairer bill = new BillGenerator_Repairer(selected_request);
+                bill.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Select a job that you are currently working on!");
+            }
+        }
     }
 }

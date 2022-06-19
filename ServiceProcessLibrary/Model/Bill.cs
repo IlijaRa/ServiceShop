@@ -14,9 +14,9 @@ namespace ServiceProcessLibrary.Model
         public string EnterpriseAddress { get; set; }
         public string ClientsName { get; set; }
         public string ClientsSurname { get; set; }
-        public string ClientsAddress { get; set; }
+        public string ClientsEmailAddress { get; set; }
         public double Price { get; set; }
-        public List<string> spent_materials { get; set; } = new List<string>();
+        public string SpentMaterials { get; set; }
         public string TermsAndConditions { get; set; }
         public int RepairerId { get; set; }
     }

@@ -25,6 +25,8 @@ namespace ServiceProcess
         public MainWindow()
         {
             InitializeComponent();
+            tb_email.Text = "steven@gmail.com";
+            tb_password.Password = "steven123";
         }
 
         private void ButtonLogIn(object sender, RoutedEventArgs e)

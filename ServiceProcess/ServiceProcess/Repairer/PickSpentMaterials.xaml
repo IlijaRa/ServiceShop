@@ -1,0 +1,34 @@
+﻿<Window x:Class="ServiceProcess.PickSpentMaterials"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServiceProcess"
+        mc:Ignorable="d"
+        Title="PickSpentMaterials" Height="710" Width="800">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2">
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Background="White" BorderBrush="White">
+                <Image Source="/images/chimney-home-icon-transparent-1.png" Stretch="Fill" Height="17" Width="18"/>
+            </Button>
+            <Button Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Search clients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Send notification" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Write a report" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+        </Menu>
+        <Label Content="Search for materials" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <TextBox x:Name="tb_for_search" HorizontalAlignment="Left" Height="30" Margin="18,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="20"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="538,93,0,0" VerticalAlignment="Top" Width="130" Height="30" FontSize="20" Click="Button_SearchMaterials"/>
+        <ComboBox x:Name="cb_criteria" HorizontalAlignment="Left" Margin="363,93,0,0" VerticalAlignment="Top" Width="161" Height="30" FontSize="20">
+            <ComboBoxItem>Name</ComboBoxItem>
+        </ComboBox>
+        <ListBox x:Name="lb_picked_materials" HorizontalAlignment="Left" Height="270" Margin="513,190,0,0" VerticalAlignment="Top" Width="255" FontSize="20"/>
+        <DataGrid x:Name="dg_materials" HorizontalAlignment="Left" Height="416" Margin="18,169,0,0" VerticalAlignment="Top" Width="473" IsReadOnly="True" FontSize="20"/>
+        <Label Content="Price :" HorizontalAlignment="Left" Margin="511,484,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="tb_price" HorizontalAlignment="Left" Height="30" Margin="579,491,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" FontSize="20"/>
+        <Button Content="Done" HorizontalAlignment="Left" Margin="513,545,0,0" VerticalAlignment="Top" Width="255" Height="40" FontSize="20" Click="Button_Done"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="513,608,0,0" VerticalAlignment="Top" Width="255" Height="40" FontSize="20" Click="Button_Clear"/>
+        <Button Content="Pick" HorizontalAlignment="Left" Margin="18,608,0,0" VerticalAlignment="Top" Width="473" Height="40" FontSize="20" Click="ButtonPick"/>
+        <Label Content="Selected materials :" HorizontalAlignment="Left" Margin="508,154,0,0" VerticalAlignment="Top" FontSize="20"/>
+    </Grid>
+</Window>
