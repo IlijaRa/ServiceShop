@@ -31,19 +31,19 @@ namespace ServiceProcess.MainRepairer
         {
             if (rb_low_importance.IsChecked == true)
             {
-                NotificationCRUD.UpdateImportance(_client_request_page._selected_request.Id, "0");
+                RequestCRUD.UpdateImportance(_client_request_page._selected_request.Id, "0");
             }
             else if (rb_mid_importance.IsChecked == true)
             {
-                NotificationCRUD.UpdateImportance(_client_request_page._selected_request.Id, "1");
+                RequestCRUD.UpdateImportance(_client_request_page._selected_request.Id, "1");
             }
             else if (rb_high_importance.IsChecked == true)
             {
-                NotificationCRUD.UpdateImportance(_client_request_page._selected_request.Id, "2");
+                RequestCRUD.UpdateImportance(_client_request_page._selected_request.Id, "2");
             }
             else if (rb_extreme_importance.IsChecked == true)
             {
-                NotificationCRUD.UpdateImportance(_client_request_page._selected_request.Id, "3");
+                RequestCRUD.UpdateImportance(_client_request_page._selected_request.Id, "3");
             }
             MessageBox.Show("Importance is updated!");
             this.Hide();

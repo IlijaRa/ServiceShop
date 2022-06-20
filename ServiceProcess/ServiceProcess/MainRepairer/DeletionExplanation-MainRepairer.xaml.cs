@@ -33,7 +33,7 @@ namespace ServiceProcess
 
         private void Button_Send(object sender, RoutedEventArgs e)
         {
-            int result = NotificationCRUD.DeleteRequest(request.Id);
+            int result = RequestCRUD.DeleteRequest(request.Id);
             
             if(result == 1)
             {

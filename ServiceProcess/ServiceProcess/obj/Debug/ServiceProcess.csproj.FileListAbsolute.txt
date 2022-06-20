@@ -24,7 +24,6 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Rep
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainRepairer\FinishedRequests-MainRepairer.g.cs
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainRepairer\Homepage-MainRepairer.g.cs
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Repairer\Homepage-Repairer.g.cs
-D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\InCommon\MessageToClient.g.cs
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Client\ReportMalfunction-Client.g.cs
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainRepairer\RequestsInProgress-MainRepairer.g.cs
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Repairer\SendNotification-Repairer.g.cs
@@ -37,7 +36,6 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Rep
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainRepairer\FinishedRequests-MainRepairer.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainRepairer\Homepage-MainRepairer.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Repairer\Homepage-Repairer.baml
-D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\InCommon\MessageToClient.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Client\ReportMalfunction-Client.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainRepairer\RequestsInProgress-MainRepairer.baml
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\Repairer\SendNotification-Repairer.baml
@@ -96,3 +94,5 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\pt\
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
 D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainRepairer\MessageToClient.g.cs
+D:\GitHubRepositories\ServiceProcess\ServiceProcess\ServiceProcess\obj\Debug\MainRepairer\MessageToClient.baml

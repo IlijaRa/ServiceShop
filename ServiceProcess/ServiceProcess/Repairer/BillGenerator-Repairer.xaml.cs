@@ -87,7 +87,7 @@ attending our workshop ‘Legal Boot Camp for your Online Business’ – if you
             {
                 MessageBox.Show("The bill is generated");
 
-                NotificationCRUD.UpdateRequestBillName(_request.Id, tb_bill_name.Text);
+                RequestCRUD.UpdateRequestBillName(_request.Id, tb_bill_name.Text);
 
                 Homepage_Repairer homepage = new Homepage_Repairer();
                 homepage.Show();

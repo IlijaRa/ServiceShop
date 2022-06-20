@@ -52,7 +52,7 @@ namespace ServiceProcess
 
         private void Button_Send(object sender, RoutedEventArgs e)
         {
-            int result = NotificationCRUD.CreateMalfunctionRequest(CurrentClientInfo.Name, 
+            int result = RequestCRUD.CreateMalfunctionRequest(CurrentClientInfo.Name, 
                                                  CurrentClientInfo.Surname, 
                                                  CurrentClientInfo.EmailAddress, 
                                                  "Equipment name :" + tb_equipment_name.Text + ',' + tb_details.Text,

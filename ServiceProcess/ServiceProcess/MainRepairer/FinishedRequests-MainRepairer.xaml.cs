@@ -24,7 +24,7 @@ namespace ServiceProcess
         public FinishedRequests_MainRepairer()
         {
             InitializeComponent();
-            var requests = NotificationCRUD.LoadRequests();
+            var requests = RequestCRUD.LoadRequests();
             List<Request> finished_requests = new List<Request>();
             foreach (var request in requests)
             {
@@ -77,7 +77,7 @@ namespace ServiceProcess
                 if(result == 1)
                 {
                     MessageBox.Show("Sent to admin!");
-                    NotificationCRUD.DeleteRequest(selected_request.Id);
+                    RequestCRUD.DeleteRequest(selected_request.Id);
                 }
                 else
                 {
@@ -117,7 +117,7 @@ namespace ServiceProcess
 
         private List<Request> SearchRequests(Enums.SearchCriteria criteria, string text, DataGrid datagrid)
         {
-            var requests = NotificationCRUD.LoadRequests();
+            var requests = RequestCRUD.LoadRequests();
             List<Request> searched_requests = new List<Request>();
             if (text.Length > 1 & criteria == Enums.SearchCriteria.name)
             {

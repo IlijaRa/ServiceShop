@@ -136,7 +136,7 @@ namespace ServiceProcess
             if(dg_repairers.SelectedItem != null)
             {
                 var repairer = (Repairer)dg_repairers.SelectedItem;
-                int result = NotificationCRUD.UpdateRequestInProgress(_request.Id, repairer.Id);
+                int result = RequestCRUD.UpdateRequestInProgress(_request.Id, repairer.Id);
 
                 if(result == 1)
                 {

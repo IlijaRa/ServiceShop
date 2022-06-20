@@ -31,7 +31,7 @@ namespace ServiceProcess
             tb_birthday.Text = CurrentRepairerInfo.Birthday.ToString("MM/dd/yyyy");
             tb_role.Text = "Repairer";
 
-            var requests = NotificationCRUD.LoadRequests();
+            var requests = RequestCRUD.LoadRequests();
             List<Request> working_on_requests = new List<Request>();
             foreach (var request in requests)
             {
@@ -73,9 +73,24 @@ namespace ServiceProcess
             if (dg_working_on.SelectedItem != null)
             {
                 var selected_request = (Request)dg_working_on.SelectedItem;
-                WriteReport_Repairer report = new WriteReport_Repairer(selected_request);
-                report.Show();
-                this.Hide();
+
+                var requests = RequestCRUD.LoadRequests();
+                foreach (var request in requests)
+                {
+                    if (request.Id == selected_request.Id)
+                    {
+                        if ((request.ReportId == 0) & (request.BillName != null) & (request.NotificationId != 0))
+                        {
+                            WriteReport_Repairer report = new WriteReport_Repairer(selected_request);
+                            report.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Cannot write a report if bill isn't generated and notification sent to main repairer!");
+                        }
+                    }
+                }
             }
             else
             {
@@ -88,9 +103,24 @@ namespace ServiceProcess
             if(dg_working_on.SelectedItem != null)
             {
                 var selected_request = (Request)dg_working_on.SelectedItem;
-                BillGenerator_Repairer bill = new BillGenerator_Repairer(selected_request);
-                bill.Show();
-                this.Hide();
+
+                var requests = RequestCRUD.LoadRequests();
+                foreach (var request in requests)
+                {
+                    if(request.Id == selected_request.Id)
+                    {
+                        if(request.BillName == null)
+                        {
+                            BillGenerator_Repairer bill = new BillGenerator_Repairer(selected_request);
+                            bill.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Request already possess the bill");
+                        }
+                    }
+                }
             }
             else
             {
@@ -103,9 +133,24 @@ namespace ServiceProcess
             if (dg_working_on.SelectedItem != null)
             {
                 var selected_request = (Request)dg_working_on.SelectedItem;
-                SendNotification_Repairer bill = new SendNotification_Repairer(selected_request);
-                bill.Show();
-                this.Hide();
+                var requests = RequestCRUD.LoadRequests();
+                foreach (var request in requests)
+                {
+                    if(request.Id == selected_request.Id)
+                    {
+                        if((request.NotificationId == 0) & (request.BillName != null))
+                        {
+                            SendNotification_Repairer notification = new SendNotification_Repairer(selected_request);
+                            notification.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Request already possess the notification");
+                        }
+                    }
+                }
+                
             }
             else
             {

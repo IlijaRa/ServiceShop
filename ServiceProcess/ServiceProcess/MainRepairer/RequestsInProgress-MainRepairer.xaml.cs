@@ -24,7 +24,7 @@ namespace ServiceProcess
         public RequestsInProgress()
         {
             InitializeComponent();
-            var requests = NotificationCRUD.LoadRequests();
+            var requests = RequestCRUD.LoadRequests();
             List<Request> in_progress_requests = new List<Request>();
             foreach (var request in requests)
             {
@@ -90,7 +90,7 @@ namespace ServiceProcess
         }
         private List<Request> SearchRequests(Enums.SearchCriteria criteria, string text, DataGrid datagrid)
         {
-            var requests = NotificationCRUD.LoadRequests();
+            var requests = RequestCRUD.LoadRequests();
             List<Request> searched_requests = new List<Request>();
             if (text.Length > 1 & criteria == Enums.SearchCriteria.name)
             {

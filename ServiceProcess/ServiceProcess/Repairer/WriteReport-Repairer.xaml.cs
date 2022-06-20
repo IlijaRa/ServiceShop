@@ -47,7 +47,7 @@ namespace ServiceProcess
 
         private void Button_SendReport(object sender, RoutedEventArgs e)
         {
-            int result = NotificationCRUD.CreateReport(cb_involved_client.Text,
+            int result = ReportCRUD.CreateReport(cb_involved_client.Text,
                                                        tb_subject.Text,
                                                        tb_details.Text,
                                                        Convert.ToInt32(cb_mark.Text),
@@ -56,7 +56,7 @@ namespace ServiceProcess
 
             if(result == 1)
             {
-                var reports = NotificationCRUD.LoadReports();
+                var reports = ReportCRUD.LoadReports();
                 Report vanted_rep = new Report(); ;
 
                 foreach (var report in reports)
@@ -67,7 +67,7 @@ namespace ServiceProcess
                     }
                 }
 
-                NotificationCRUD.UpdateRequestToFinished(_request.Id, vanted_rep.Id);
+                RequestCRUD.UpdateRequestToFinished(_request.Id, vanted_rep.Id);
 
                 Homepage_Repairer homepage = new Homepage_Repairer();
                 homepage.Show();

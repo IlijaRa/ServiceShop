@@ -83,7 +83,7 @@ namespace ServiceProcess
                     }
                 }
 
-                NotificationCRUD.UpdateRequestNotificationId(_request.Id, vanted_not.Id);
+                RequestCRUD.UpdateRequestNotificationId(_request.Id, vanted_not.Id);
 
                 Homepage_Repairer homepage = new Homepage_Repairer();
                 homepage.Show();

@@ -52,6 +52,8 @@
     <Compile Include="BusinessLogic\MessageCRUD.cs" />
     <Compile Include="BusinessLogic\RepairerCRUD.cs" />
     <Compile Include="BusinessLogic\NotificationCRUD.cs" />
+    <Compile Include="BusinessLogic\ReportCRUD.cs" />
+    <Compile Include="BusinessLogic\RequestCRUD.cs" />
     <Compile Include="DataAccess\SSMSDataAccess.cs" />
     <Compile Include="Model\Client.cs" />
     <Compile Include="Model\CurrentClientInfo.cs" />

@@ -26,7 +26,7 @@ namespace ServiceProcess
         public ClientRequests_MainRepairer()
         {
             InitializeComponent();
-            var requests = NotificationCRUD.LoadRequests();
+            var requests = RequestCRUD.LoadRequests();
             List<Request> not_forwarded_requests = new List<Request>();
             foreach (var request in requests)
             {
@@ -93,7 +93,7 @@ namespace ServiceProcess
 
         private List<Request> SearchClient(Enums.SearchCriteria criteria, string text, DataGrid datagrid)
         {
-            var requests = NotificationCRUD.LoadRequests();
+            var requests = RequestCRUD.LoadRequests();
             List<Request> searched_requests = new List<Request>();
             if (text.Length > 1 & criteria == Enums.SearchCriteria.name)
             {
@@ -216,7 +216,7 @@ namespace ServiceProcess
             if (dg_requests.SelectedItem != null)
             {
                 _selected_request = (Request)dg_requests.SelectedItem;
-                var request = NotificationCRUD.LoadRequestById(_selected_request.Id);
+                var request = RequestCRUD.LoadRequestById(_selected_request.Id);
 
                 if (Convert.ToInt32(request.Importance) == (int)Enums.RequestImportance.low_importance)
                 {

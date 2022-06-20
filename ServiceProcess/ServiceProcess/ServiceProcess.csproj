@@ -87,7 +87,7 @@
     <Compile Include="Repairer\Homepage-Repairer.xaml.cs">
       <DependentUpon>Homepage-Repairer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="InCommon\MessageToClient.xaml.cs">
+    <Compile Include="MainRepairer\MessageToClient.xaml.cs">
       <DependentUpon>MessageToClient.xaml</DependentUpon>
     </Compile>
     <Compile Include="Client\ReportMalfunction-Client.xaml.cs">
@@ -175,7 +175,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="InCommon\MessageToClient.xaml">
+    <Page Include="MainRepairer\MessageToClient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -278,6 +278,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\Screenshot_2_colored3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InCommon\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
