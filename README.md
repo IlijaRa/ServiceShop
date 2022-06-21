@@ -53,3 +53,10 @@ The report compiled in this way is sent to the chief service technician.
 * Custommade request - In the case of a custommade request, the receipt of the report (4.4.6) and notification of the completed work (4.4.5), the main service provider is activated and forwards the admin generated invoice with the price. This document is accompanied by the main service provider, the method of payment that the client originally chose when sending the request. Now the admin has all the necessary information to determine the delivery of the equipment to the client. The administrator treats this request in the same way as the requests that come to him regarding the purchase by the client.
 * Request for repair - If it is a repair, it is assumed that the request is submitted by customers who are in the same city as the service. Therefore, they can bring the equipment themselves and the admin does not organize delivery for them. The chief service technician arranges an appointment with them when they will pick up the equipment.
 This functionality completes the complete process in which the service participates.
+
+----
+
+# Prerequisites:
+* Visual Studio 2019 (or higher)
+* MSSQL - SQL Server Management Studio (or any other IDE for managing SQL infrastucture)
+* Balsamiq Wireframes (to open file with wireframes)
