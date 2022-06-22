@@ -76,4 +76,10 @@ Warning : Scripts "CREATE TABLE-script" and "INSERT INTO-script" are customized 
 5. In class ServiceProcessLibrary.DataAccess.SSMSDataAccess (line 15), change connectionName to the name of your database (image below)
 ![image](https://user-images.githubusercontent.com/64584067/174985398-0cd5fc1a-af73-4c3a-ae6a-8d97f7bd9766.png)
 
+# Preview:
+![login_page](https://user-images.githubusercontent.com/64584067/174992735-ef5d8504-16dd-45d5-810b-f8b08ddb7068.png)
+![chief_homepage](https://user-images.githubusercontent.com/64584067/174992787-a09b5960-2dda-4f2f-8ae9-3b64622d6962.png)
+![repairer_homepage](https://user-images.githubusercontent.com/64584067/174992822-b70f449f-00ac-4c51-be54-8c3886a1ca1b.png)
+![client_homepage](https://user-images.githubusercontent.com/64584067/174992856-a8c105ac-a78a-4737-8fdf-7e6ee2fbebe4.png)
+
 
