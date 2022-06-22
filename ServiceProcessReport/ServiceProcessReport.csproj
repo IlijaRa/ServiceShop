@@ -148,5 +148,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceProcessLibrary\ServiceProcessLibrary.csproj">
+      <Project>{0677346F-A053-4317-B9E2-C43DED3CA26B}</Project>
+      <Name>ServiceProcessLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

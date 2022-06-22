@@ -1,4 +1,5 @@
 ﻿using Microsoft.Reporting.WinForms;
+using ServiceProcessLibrary.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,7 +29,7 @@ namespace ServiceProcessReport
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-2JTNAL1\SQLEXPRESS;Initial Catalog=ServiceProcess;Integrated Security=True");
+            SqlConnection con = new SqlConnection(SSMSDataAccess.GettConnectionstring());
             con.Open();
             SqlCommand cmd = new SqlCommand("Select * from JobHistory", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);

@@ -69,3 +69,7 @@ D:\GitHubRepositories\ServiceProcess\ServiceProcessReport\bin\Debug\zh-CHT\Micro
 D:\GitHubRepositories\ServiceProcess\ServiceProcessReport\obj\Debug\ServiceProcessReport.csproj.CopyComplete
 D:\GitHubRepositories\ServiceProcess\ServiceProcessReport\obj\Debug\ServiceProcessReport.exe
 D:\GitHubRepositories\ServiceProcess\ServiceProcessReport\obj\Debug\ServiceProcessReport.pdb
+D:\GitHubRepositories\ServiceProcess\ServiceProcessReport\bin\Debug\ServiceProcessLibrary.dll
+D:\GitHubRepositories\ServiceProcess\ServiceProcessReport\bin\Debug\Dapper.dll
+D:\GitHubRepositories\ServiceProcess\ServiceProcessReport\bin\Debug\ServiceProcessLibrary.pdb
+D:\GitHubRepositories\ServiceProcess\ServiceProcessReport\bin\Debug\Dapper.xml
