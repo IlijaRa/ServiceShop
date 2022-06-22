@@ -66,4 +66,11 @@ This functionality completes the complete process in which the service participa
 Warning : Scripts "CREATE TABLE-script" and "INSERT INTO-script" are customized directly for MSSQL, but with a slight change can be used for other IDEs.
 
 ### Steps:
+1. Create database
+2. Start code from "CREATE TABLE-script"
+3. Start code from "INSERT INTO-script"
+4. Replace current connection string with yours (in App.config file)
+5. In class ServiceProcessLibrary.DataAccess.SSMSDataAccess (line 15), change connectionName to the name of your database (image below)
+![image](https://user-images.githubusercontent.com/64584067/174985398-0cd5fc1a-af73-4c3a-ae6a-8d97f7bd9766.png)
+
 
