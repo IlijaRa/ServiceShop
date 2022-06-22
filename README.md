@@ -1,15 +1,15 @@
 # Summary:
-A system in which the Client, Chief Service Provider and the Service Provider participate. The client sends requests for his broken equipment to the Chief Service Provider. Chief Service Provider forwards them to the Service Provider. When the Service Provider have finished their work, they need to generate an invoice and send a notification to the Chief Service Provider. Chief Service Provider forwards it to the administrator (this role is not supported in the system).
-
-# Description of a Service subsystem
-
-This chapter lists and describes all user functionalities that are part of the Service subsystem.
 
 ## Subsystem roles:
 * Client
 * Chief Service Provider (Main repairer)
 * Service Provider (Repairer)
 
+A system in which a Client, a Chief Service Provider and a Service Provider participate. The client sends requests for his broken equipment to the Chief Service Provider. Chief Service Provider forwards them to the Service Provider. When the Service Provider have finished their work, they need to generate an invoice and send a notification to the Chief Service Provider. Chief Service Provider forwards it to the administrator (this role is not supported in the system).
+
+# Description of a Service subsystem
+
+This chapter lists and describes all user functionalities that are part of the Service subsystem.
 
 ## Functional requirements:
 
