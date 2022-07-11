@@ -61,12 +61,12 @@ This functionality completes the complete process in which the service participa
 
 # Prerequisites:
 * Visual Studio 2019 (or higher)
-* MSSQL - SQL Server Management Studio (or any other IDE for managing SQL infrastucture)
+* MSSQL - SQL Server Management Studio (or any other DBMS)
 * Balsamiq Wireframes (to open file with wireframes)
 
 # Set up a database:
 
-Warning : Scripts "CREATE TABLE-script" and "INSERT INTO-script" are customized directly for MSSQL, but with a slight change can be used for other IDEs.
+Warning : Scripts "CREATE TABLE-script" and "INSERT INTO-script" are customized directly for MSSQL, but with a slight change can be used for any other DBMS.
 
 ### Steps:
 1. Create database
